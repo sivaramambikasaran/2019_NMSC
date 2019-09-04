@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>RIYAZ  GAZI - ma19m015_2(1).rst</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>RIYAZ  GAZI - ma19m015_2(1).rst</CENTER></H3><HR>
+<BR>
+.. code:: octave<BR>
+<BR>
+    % This Function Calculates Uniform Nodes<BR>
+    function xn=uni_nodes(n)<BR>
+        xn=zeros(n,1);<BR>
+        for k=1:n<BR>
+          xn(k)=-1+(2*(k-1)+1)/n;<BR>
+        endfor<BR>
+    endfunction<BR>
+<BR>
+.. code:: octave<BR>
+<BR>
+    function [y] = lagrange(x, x0, y0)<BR>
+    <BR>
+    <BR>
+        n = size(x0, 1); <BR>
+        y = 0;<BR>
+    <BR>
+        for i=1:n<BR>
+            p = 1;<BR>
+            for j=1:n<BR>
+    <BR>
+                if j == i   % avoiding fancy division by 0<BR>
+                    continue;<BR>
+                endif<BR>
+    <BR>
+                p =p.*(x-x0(j))./(x0(i)-x0(j));<BR>
+    <BR>
+            endfor<BR>
+    <BR>
+            y = y + y0(i) * p;   <BR>
+        endfor<BR>
+    endfunction<BR>
+<BR>
+.. code:: octave<BR>
+<BR>
+    for n=1:20<BR>
+      i=n*5;<BR>
+      X=uni_nodes(i);<BR>
+      V=vander(X);<BR>
+      ca=cond(V);<BR>
+    endfor<BR>
+    %plot(1:20,log(ca))<BR>
+      <BR>
+      n=100;<BR>
+    X=uni_nodes(n);<BR>
+    V=vander(X);<BR>
+    Y=25*X.*X;<BR>
+    fx=1./(1+Y);<BR>
+    c=inv(V)*fx;<BR>
+    x=(-1:0.1:1)';<BR>
+    fxx=vander(x,n)*c<BR>
+    plot(x,fxx)<BR>
+    hold on;<BR>
+    fxlagrange=lagrange(x,X,fx);<BR>
+    plot(x,fxlagrange)<BR>
+<BR>
+<BR>
+<BR>
+5.\ :math:`\bullet` We consider a polynomial<BR>
+<A NAME="1"></A><A NAME="0"></A>$:raw-latex:`\sum`\ *{j=0}^{n} x\_j^ml\_j(x) $,where<BR>
+<A NAME="2"></A>:math:`m \in \{0,1,..n\}` and :math:`l_j` is the :math:`jth` lagrange<BR>
+poynomial. Now for a certain set of interpolation nodes,say<BR>
+:<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match29-1.html#0',3,'match29-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>math:`\{x_0,x_1,.....x_n</B></FONT>\}` <FONT color="#f63526"><A HREF="javascript:ZweiFrames('match29-1.html#1',3,'match29-top.html#1',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>the interpolating polynomial of the<BR>
+function $f(x) = x^m</B></FONT> $ is $q(<FONT color="#77bfc7"><A HREF="javascript:ZweiFrames('match29-1.html#2',3,'match29-top.html#2',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x) = :raw-latex:`\sum`*\ {j=0}^{n}<BR>
+f(x\_j)l\_j(x) = :raw-latex:`\sum`\_{j=0}^{n} x\_j^ml\_j(x) $. But<BR>
+:math:`x^m` is itself a polynomial which also interpolates itself at the<BR>
+points :math:`\{x_0,x_1,.....x_n\}`. Since polynomial interpolation is<BR>
+unique hence we conclude<BR>
+<BR>
+.. math::  \sum_{j=0}^{n} x_j^ml_j(x) = x^m</B></FONT> <BR>
+<A NAME="3"></A><BR>
+1.\ :math:`\bullet`\ we know that determinant is polynomial function and<BR>
+the matrix :math:`V` is contains the variable<BR>
+:math:`<FONT color="#6cc417"><A HREF="javascript:ZweiFrames('match29-1.html#3',3,'match29-top.html#3',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_{0},x_{1},...,x_{n},`.So</B></FONT> det(\ :math:`V`) is polynomial of<BR>
+variable :math:`x_{0},x_{1},...,x_{n},`.Now if we expand determinant<BR>
+about :math:`x_{n}` along the n-th column then we have find the co<BR>
+<A NAME="4"></A>factor of order (n-1) and proceeding in similar way we find the co<BR>
+factor of order 1.so the degree of the polynomial<BR>
+det(\ :math:`V`)\ :math:`=n+(n-1)+...+1=`\ :math:`\frac{n(n+1)}{2}`<BR>
+<A NAME="5"></A>\ :math:`\bullet` <FONT color="#151b8d"><A HREF="javascript:ZweiFrames('match29-1.html#4',3,'match29-top.html#4',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>If :math:`x_{i}=x_{j}` for</B></FONT> :math:`i\neq j`,then<BR>
+<A NAME="6"></A>atleast two row of the matrix is identical.Hence<BR>
+:math:`det(`\ V\ :math:`)=0` :math:`\bullet`\ Since<BR>
+:math:`det(V)=0`,then (:<FONT color="#c8c2a7"><A HREF="javascript:ZweiFrames('match29-1.html#5',3,'match29-top.html#5',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>math:`x_{i}-x_{j</B></FONT>}`) is a factor of<BR>
+:math:`det(V)` \ :math:`\bullet` form the above result ,we <FONT color="#50ebec"><A HREF="javascript:ZweiFrames('match29-1.html#6',3,'match29-top.html#6',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>say that<BR>
+<A NAME="7"></A>:math:`det(V</B></FONT>)=C(\prod\limits_{1\leq j&lt;i\leq n}(x_i-x_j))`, where C is a<BR>
+constant.<BR>
+<BR>
+3.\ :math:`\bullet`\ Chebyshev polynomials are of the form $<FONT color="#c58917"><A HREF="javascript:ZweiFrames('match29-1.html#7',3,'match29-top.html#7',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>T\_n(x) =<BR>
+:raw-latex:`\cos[n\cos^{-1}x]`. $Let :math:`x =\cos\theta`. Then<BR>
+$T\_n(x) = :raw-latex:`\cos `n:raw-latex:`\theta `$ Now $T\_{n+1}(x) =<BR>
+:raw-latex:`\cos`(n+1):raw-latex:`\theta `=<BR>
+:raw-latex:`\cos`(n:raw-latex:`\theta`+:raw-latex:`\theta`) $ $ =<BR>
+:raw-latex:`\cos `n:raw-latex:`\theta `:raw-latex:`\cos`:raw-latex:`\theta`-sin:raw-latex:`\theta `:raw-latex:`\sin `n<BR>
+:raw-latex:`\theta `$ =<BR>
+:math:`2 \cos n\theta \cos\theta - (sin\theta \sin n \theta + \cos n\theta \cos\theta)`<BR>
+= :math:`2xT_n - \cos(n\theta - \theta)` = :math:`2xT_n - T_{n-1</B></FONT>}`<BR>
+<BR>
+
+</BODY>
+</HTML>

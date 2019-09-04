@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>HARISH KUMAR - Assignment 2 _NMSC_ma19m005.rst</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>HARISH KUMAR - Assignment 2 _NMSC_ma19m005.rst</CENTER></H3><HR>
+<BR>
+ANS 1 (a) Let<BR>
+:math:`V_{n+1} = \begin{vmatrix}  1 &amp; x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-2} &amp; x_0^{n-1} &amp; x_0^n \\  1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-2} &amp; x_1^{n-1} &amp; x_1^n\\  1 &amp; x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^{n-2} &amp; x_2^{n-1} &amp; x_2^n \\  1 &amp; x_3 &amp; x_3^2 &amp; \cdots &amp; x_3^{n-2} &amp; x_3^{n-1} &amp; x_3^n\\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \vdots\\  1 &amp; x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-2} &amp; x_{n-1}^{n-1} &amp; x_{n-1}^{n} \\  1 &amp; x_n &amp; x_n^2 &amp; \cdots &amp; x_n^{n-2} &amp; x_n^{n-1} &amp; x_n^n \end{vmatrix}`.<BR>
+<BR>
+now we will replace :math:`x_n` in :math:`V_{n+1}` with :math:`x`.<BR>
+<BR>
+Hence :math:`V_{n+1}` now becomes the function of :math:`x`.<BR>
+<BR>
+let<BR>
+:math:`P \left({x}\right) = \begin{vmatrix}  1 &amp; x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-2} &amp; x_0^{n-1} &amp; x_0^n \\  1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-2} &amp; x_1^{n-1} &amp; x_1^n \\  1 &amp; x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^{n-2} &amp; x_2^{n-1} &amp; x_2^n \\  1 &amp; x_3 &amp; x_3^2 &amp; \cdots &amp; x_3^{n-2} &amp; x_3^{n-1} &amp; x_3^n\\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \vdots \\  1 &amp; x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-2} &amp; x_{n-1}^{n-1}&amp; x_{n-1}^{n} \\  1 &amp; x &amp; x^2 &amp; \cdots &amp; x^{n-2} &amp; x^{n-1} &amp; x^n \end{vmatrix}`.<BR>
+<BR>
+now Perform row expansion by last row.<BR>
+<BR>
+Then :math:`P \left({x}\right)` is seen to be a polynomial of degree<BR>
+:math:`n`:<BR>
+<BR>
+::math:`P \left({x}\right) = \begin{vmatrix}  x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-2} &amp; x_0^{n-1} &amp; x_0^n \\  x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-2} &amp; x_1^{n-1} &amp; x_1^n \\  x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^{n-2} &amp; x_2^{n-1} &amp; x_2^n \\  x_3 &amp; x_3^2 &amp; \cdots &amp; x_3^{n-2} &amp; x_3^{n-1} &amp; x_3^n \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \  &amp; \vdots \\  x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-2} &amp; x_{n-1}^{n-1}&amp; x_{n-1}^{n} \\ \end{vmatrix} + \begin{vmatrix}  1 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-2} &amp; x_0^{n-1} &amp; x_0^n \\  1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-2} &amp; x_1^{n-1} &amp; x_1^n \\  1 &amp; x_2^2 &amp; \cdots &amp; x_2^{n-2} &amp; x_2^{n-1} &amp; x_2^n \\  1 &amp; x_3^2 &amp; \cdots &amp; x_3^{n-2} &amp; x_3^{n-1} &amp; x_3^n \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \ &amp; \vdots \\  1 &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-2} &amp; x_{n-1}^{n-1} &amp; x_{n-1}^{n} \\ \end{vmatrix}x \ \ + \ \ \cdots \ \ + \ \<BR>
+<A NAME="3"></A>\begin{vmatrix}  1 &amp; x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-1} \\  1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-1} \\  1 &amp; x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^{n-1} \\  1 &amp; x_3 &amp; x_3^2 &amp; \cdots &amp; x_3^{n-1} \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\  1 &amp; x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-1} \end{vmatrix}x^{n}`.<BR>
+<BR>
+We can see that statement :math:`P \left({x}\right) = 0` holds true for<BR>
+all :<FONT color="#6cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#3',2,'match15-top.html#3',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`x_1, x_2</B></FONT>, \cdots x_{n}` because if<BR>
+:math:`x=x_1, x_2, \cdots x_{n}` starting determinant would have two<BR>
+equal rows so :math:`V_{n+1} = 0`.<BR>
+<BR>
+By the Polynomial Factor Theorem:<BR>
+:math:`P \left({x}\right) = C \left({x - x_0}\right) \left({x - x_1}\right) \dotsm \left({x - x_{n-1} }\right)`<BR>
+<BR>
+where :math:`C` is the leading coefficient<BR>
+<BR>
+Thus<BR>
+::math:`P \left({x}\right) = V_{n} \left({x - x_0}\right) \left({x - x_2}\right) \dotsm \left({x - x_{n-1} }\right)`<BR>
+which by returning :math:`x = x_n` gives:<BR>
+<BR>
+::math:`V_{n+1} = V_{n} \left({x_n - x_0}\right) \left({x_n - x_1}\right) \dotsm \left({x_n - x_{n-1} }\right)`<BR>
+<BR>
+Repeating the process:<BR>
+<BR>
+:math:`V_{n+1}=\prod_{0\mathop \le i \mathop &lt; n} \left({x_n - x_i}\right) V_{n}`\ <BR>
+$ =:raw-latex:`\prod`\_{0 :raw-latex:`\mathop `:raw-latex:`\le `i<BR>
+:raw-latex:`\mathop &lt; n} \left({x_n - x_i}\right) \prod_{0\mathop \le i \mathop &lt; n} \left({x_{n-1} - x_i}\right) V_{n}$&lt;br&gt;`<BR>
+:math:`=...`\ <BR>
+:math:`=\prod_{0 \mathop \le i \mathop &lt; j \mathop \le n} \left({x_j - x_i}\right)`<BR>
+<BR>
+ By Leibniz formula, det(V) is a polynomial in the :math:`x_i` with<BR>
+integer coefficients. All entries of the ith column have the total<BR>
+<A NAME="0"></A>degree i – 1. Thus, again by Leibniz formula, all terms of the<BR>
+determinant have the total degree :math:`0+1+2+...+n=\frac{n(n+1)}{2}`<BR>
+<BR>
+<A NAME="1"></A><FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#0',2,'match15-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>if :math:`x_i = x_j` for</B></FONT> :math:`i\neq j`, then Clearly<BR>
+:math:`det(V) = 0`<BR>
+<BR>
+Clearly :<FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#1',2,'match15-top.html#1',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`(x_i-x_j</B></FONT>)`\ is a factor of :math:`det(V)`<BR>
+<BR>
+<A NAME="5"></A><A NAME="4"></A>5. We consider the polynomial $:raw-latex:`\sum`\ *{j=0}^{n}<BR>
+<A NAME="6"></A>   x\_j^ml\_j(x) $.where m =1 to n and :math:`l_j` is the :math:`jth`<BR>
+   lagrange poynomial.Now for a certain set of interpolation nodes,say<BR>
+   :<FONT color="#151b8d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#4',2,'match15-top.html#4',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`\{x_0,x_1,.....x_n</B></FONT>\}` <FONT color="#c8c2a7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#5',2,'match15-top.html#5',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>the interpolating polynomial of the<BR>
+   function $f(x) = x^m</B></FONT> $ is $<FONT color="#50ebec"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#6',2,'match15-top.html#6',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>p(x) = :raw-latex:`\sum`*\ {j=0}^{n}<BR>
+   f(x\_j)l\_j(x) = :raw-latex:`\sum`\_{j=0}^{n} x\_j^ml\_j(x) $. But<BR>
+   :math:`x^m` is itself a polynomial which also interpolates itself at<BR>
+   the points\ :math:`\{x_0,x_1,.....x_n</B></FONT>\}` we observe that<BR>
+   :math:`p(x_0)={x_0}^m` :math:`p(x_1)={x_1}^m`\ <BR>
+<A NAME="7"></A><A NAME="2"></A>   :math:`p(x_2)={x_2}^m`...\ :math:`p(x_n)={x_n}^m`\ <BR>
+   hence,\ :math:`p(x)=\sum_{j=0}^{n}{x_j}^m{l_j}(x)=x^m`<BR>
+<BR>
+:math:`\{<FONT color="#77bfc7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#2',2,'match15-top.html#2',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_0,x_1,.....x_n</B></FONT>\}`. <FONT color="#c58917"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#7',2,'match15-top.html#7',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>Since polynomial interpolation is unique<BR>
+hence we conclude<BR>
+<A NAME="10"></A><BR>
+.. math::  \sum_{j=0}^{n} x_j^ml_j(x) = x^m</B></FONT> <BR>
+<BR>
+ 3.(a)Chebyshev polynomials are of the form $<FONT color="#b041ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#10',2,'match15-top.html#10',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T\_n(x) =<BR>
+:raw-latex:`\cos[n\cos^{-1}x]`. $Let :math:`x =\cos\theta`. Then<BR>
+$T\_n(x) = :raw-latex:`\cos `n:raw-latex:`\theta `$ Now $T\_{n+1}(x) =<BR>
+:raw-latex:`\cos`(n+1):raw-latex:`\theta `=<BR>
+:raw-latex:`\cos`(n:raw-latex:`\theta`+:raw-latex:`\theta`) $ $ =<BR>
+:raw-latex:`\cos `n:raw-latex:`\theta `:raw-latex:`\cos`:raw-latex:`\theta`-sin:raw-latex:`\theta `:raw-latex:`\sin `n<BR>
+:raw-latex:`\theta `$ =<BR>
+<A NAME="8"></A>:math:`2 \cos n\theta \cos\theta -(sin\theta \sin n \theta + \cos n\theta \cos\theta)`<BR>
+<A NAME="9"></A>= :math:`2xT_n - \cos(n\theta - \theta)` = :math:`2xT_n - T_{n-1</B></FONT>}`<BR>
+<BR>
+<FONT color="#bce954"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#8',2,'match15-top.html#8',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>3(b)\ :math:`T_{n+1}(x)-2xT_n(x)+T_{n-1}(x)=0`\ <BR>
+:math:`T_{n+1}(x)=2xT_n(x)-T_{n-1}(x)`\  given :math:`T</B></FONT>_<FONT color="#f88017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match15-0.html#9',2,'match15-top.html#9',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>0=1`\ <BR>
+:math:`T_1=\cos(1.cos^{-1}x)=x`\ \ :math:`=2^{1-1}x`\  by substituting<BR>
+:math:`n=1`,<BR>
+:math:`T_{2}(x)=2xT_1(x)-T_0(x)=2x^2 -1`\ \ :math:`=2^{2-1}x^2-1`\ <BR>
+again bySubstituting :math:`n=2`,<BR>
+:math:`T_{3}(x)=2xT_2(x)-T_1(x)=4x^3-3x`\ \ :math:`=2^{3-1}x^3-3x`\ <BR>
+again by Substituting :math:`n=3`,<BR>
+:math:`T_{4}(x)=2xT_3(x)-T_2(x)=8x^4-8x^2+1`\ \ :math:`=2^{4-1}x^4-8x^2+1`\ <BR>
+so the leading coefficient is :math:`2^{n-1}`<BR>
+<BR>
+3(c)<BR>
+<BR>
+:math:`T_{n+1}(x_{k})=0`\ <BR>
+:math:`\Rightarrow \cos((n+1)\cos^{-1}x_k)=0`\ <BR>
+:math:`\Rightarrow (n+1)\cos^{-1}x_k=\dfrac{(2k+1)\pi}{2}`\  hence<BR>
+proved, :math:`\Rightarrow x_k=\cos\bigg(\dfrac{(2k+1)\pi}{2n+2}\bigg)`,<BR>
+:math:`\forall k \in \{0,1,2,3,\dotsm,n\}`.<BR>
+<BR>
+3</B></FONT>(d)<BR>
+<BR>
+:math:`|T_{n}(x)|=|\cos(n\cos^{-1}x)|\leq 1`\ <BR>
+:math:`\Rightarrow 0 \leq n\cos^{-1}x \leq \pi`.<BR>
+:math:`|T_n(x_k)|=(-1)^k`.so,the value is in between :math:`1` and<BR>
+:math:`-1` for any :math:`k`\ <BR>
+:math:`\Rightarrow ~ x_1,x_2,x_3,\dotsm,x_{n+1}` are exactly the roots<BR>
+of :math:`T_{n}`.<BR>
+<BR>
+.. code:: ipython3<BR>
+<BR>
+    % This Function Calculates Uniform Nodes<BR>
+    function xn=uni_nodes(n)<BR>
+        xn=zeros(n,1);<BR>
+        for k=1:n<BR>
+          xn(k)=-1+(2*(k-1)+1)/n;<BR>
+        endfor<BR>
+    endfunction<BR>
+    ------------function [y] = lagrange(x, x0, y0)<BR>
+    <BR>
+        % x0 - vector containing inputs (x values)<BR>
+        % y0 - vector containing outputs (results for these x values<BR>
+        % x - value you want to compute, for interpolation<BR>
+        % y - computed value<BR>
+    <BR>
+        n = size(x0, 1); <BR>
+        y = 0;<BR>
+    <BR>
+        for i=1:n<BR>
+            p = 1;<BR>
+            for j=1:n<BR>
+    <BR>
+                if j == i   % avoiding fancy division by 0<BR>
+                    continue;<BR>
+                endif<BR>
+    <BR>
+                p =p.*(x-x0(j))./(x0(i)-x0(j));<BR>
+    <BR>
+            endfor<BR>
+    <BR>
+            y = y + y0(i) * p;   <BR>
+        endfor<BR>
+    endfunction-------------------------------------------------------------------------------------for n=1:20<BR>
+      i=n*5;<BR>
+      X=uni_nodes(i);<BR>
+      V=vander(X);<BR>
+      ca=cond(V);<BR>
+    endfor<BR>
+    %plot(1:20,log(ca))<BR>
+      <BR>
+      n=100;<BR>
+    X=uni_nodes(n);<BR>
+    V=vander(X);<BR>
+    Y=25*X.*X;<BR>
+    fx=1./(1+Y);<BR>
+    c=inv(V)*fx;<BR>
+    x=(-1:0.1:1)';<BR>
+    fxx=vander(x,n)*c<BR>
+    plot(x,fxx)<BR>
+    hold on;<BR>
+    fxlagrange=lagrange(x,X,fx);<BR>
+    plot(x,fxlagrange<BR>
+<BR>
+<BR>
+::<BR>
+<BR>
+<BR>
+      File &quot;&lt;ipython-input-1-b3761660d560&gt;&quot;, line 2<BR>
+        function xn=uni_nodes(n)<BR>
+                  ^<BR>
+    SyntaxError: invalid syntax<BR>
+<BR>
+<BR>
+<BR>
+
+</BODY>
+</HTML>

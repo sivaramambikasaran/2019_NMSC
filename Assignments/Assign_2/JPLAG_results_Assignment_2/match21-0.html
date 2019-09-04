@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>M SOWMIA - ma19m020_2.rst</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>M SOWMIA - ma19m020_2.rst</CENTER></H3><HR>
+<A NAME="0"></A><BR>
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match21-1.html#0',3,'match21-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>M.SOWMIA<BR>
+~~~~~~~~<BR>
+<BR>
+MA19M020<BR>
+~~~~~~~~<BR>
+<BR>
+NUMERICAL METHODS OF SCIENTIFIC COMPUTING<BR>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<BR>
+<BR>
+PROBLEM :1<BR>
+^^^^^^^^^^<BR>
+<BR>
+<A NAME="1"></A>A)Show that Det(V) is a polynomial in the variables $x\_0,x\_1,...,x\_n<BR>
+$with degree n(n+1)/ 2 I tried solving it by using column operations but<BR>
+the calculations become very tedious,and moreoer we dont need the exact<BR>
+form of</B></FONT> eterminant <FONT color="#f63526"><A HREF="javascript:ZweiFrames('match21-1.html#1',3,'match21-top.html#1',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>right now.so let us now consider the fact that<BR>
+<BR>
+.. math:: Det(v)=\sum{i=1}^{n+1} (-1)^n v_{ij} M_{ij}<BR>
+<BR>
+so we get that<BR>
+<BR>
+.. math:: degree(Det(v))=degree\big(\sum_{i=1}^{n+1} (-1)^n v_{ij} M_{ij}\big)<BR>
+<BR>
+ note ,that degree of all minors are the same ,w can check this by<BR>
+taking cases of n so,\ <BR>
+<BR>
+.. math:: degree(Det(v))=degree(M_{11}) (SAY)<BR>
+<BR>
+ Now,\ <BR>
+<BR>
+.. math:: deg(M_{11}=1+deg(M_{11}^1)<BR>
+<BR>
+ where$ M\_{11}^1 $denotes the same minor of nxn submatrix of<BR>
+:math:`M_{11}`<BR>
+<BR>
+.. math:: \implies deg(M_{11}=1+2+deg(M_{11}^2)<BR>
+<BR>
+ where $ M\_{11}^2$denotes the same minor of (n-1)x(n-1) submatrix of<BR>
+:math:`M_{11}^1` $$<BR>
+<BR>
+PART B)Show that if :math:`x_i=x_j` for some :math:`i\neq j` then<BR>
+det(v)=0 This is quite straight forwrd.When :math:`x_i=x_j` for some<BR>
+:math:`i\neq j` doing a single row operation :math:`R_i \to R_i-R_j`<BR>
+will produce :math:`R_i =0` .Therefore determinant beomes zero.<BR>
+<BR>
+PART C)Hence, conclude that :math:`x_i-x_j` is a factor of det(v) This<BR>
+is also obvious.Since the det(v) becomes zero whenever :math:`x_i=x_j`<BR>
+for some :math:`i\neq j` :math:`x_i-x_j` and also we have the additional<BR>
+fact that it is a polynomial of would be a factoor of the polynomial of<BR>
+$x\_0,x\_1,...,x\_n $. how many suc fcators would we get? for i=0, j<BR>
+:raw-latex:`\to  `1,2,....n for i=1,to get non repeated factors, j can<BR>
+be 2,3...n i=2 :raw-latex:`\to `3,4,...... therefore the total no of<BR>
+fcators would be n+(n-1)+(n-2)+.........1=n(n+1)/2<BR>
+<BR>
+PART D) THE FORM OF THE DETERMINANT WOULD BE : product of n(n+1)/2<BR>
+factors of :math:`(x_i -x_j)` and$ i:raw-latex:`\neq `j$therefore<BR>
+<BR>
+.. math:: determinant(V)= k\prod_{1\leq j&lt;i\leq n} (x_i-x_j)<BR>
+<BR>
+where k is some contant<BR>
+<BR>
+PART E) In part D) We see that coefficient of<BR>
+:math:`x_1x_2^2x_3^2...,x_n^n =1` and from part A) we see that M\_{11}<BR>
+is a monic poynomial with the leading term being<BR>
+:math:`x_1x_2^2x_3^2...,x_n^n =1`.So now we compare both and coclude<BR>
+that the constant k=1<BR>
+<BR>
+PROBLEM:2<BR>
+^^^^^^^^^<BR>
+<BR>
+PART A)PROVE THE RECURRENCE:<BR>
+<BR>
+.. math:: q_{n+1}=x q_{n}-\left(\frac{n^{2}}{4 n^{2}-1}\right) q_{n-1}<BR>
+<BR>
+LET US START WITH THE GENERATING POLYNOMIAL OF LEGENDRE POLYNOMILAS<BR>
+note:I DONT KNOW THE GENERATING FUNCTION FOR MONIC LEGENRE POLYNMIALS ,O<BR>
+I AM RESORTING TO LEGENDRE POLYNOMILAS ONLY<BR>
+<BR>
+.. math:: \frac{1}{\sqrt{1-2 x t+t^{2}}}=\sum_{n=0}^{\infty} q_{n}(x) t^{n}, t \neq 1<BR>
+<BR>
+differentianting on both sides wrt t ,<BR>
+<BR>
+.. math:: -\frac{1}{2}\left(1-2 x t+t^{2}\right)^{-\frac{3}{2}}(-2 x+2 t)=\sum_{n=0}^{\infty} n P_{n}(x) t^{n-1}<BR>
+<BR>
+ rearranging ,we get<BR>
+<BR>
+.. math:: (x-t)\left(1-2 x t+t^{2}\right)^{-\frac{1}{2}}=\left(1-2 x t+t^{2}\right) \sum_{n=0}^{\infty} n P_{n}(x) t^{n-1}<BR>
+<BR>
+ now ,let us substitute back we get<BR>
+<BR>
+.. math:: (x-t) \sum_{n=0}^{\infty} P_{n}(x) t^{n}=\left(1-2 x t+t^{2}\right) \sum_{n=0}^{\infty} n P_{n}(x) t^{n-1}<BR>
+<BR>
+ Now comparing the coefficietns on both sides for the :math:`t^n` term<BR>
+we get the following recurrance relation<BR>
+<BR>
+.. math:: x P_{n}(x)-P_{n-1}(x)=(n+1) P_{n}(x)+(n-1) P_{n-1}(x)-2 n x P_{n}(x)<BR>
+<BR>
+PROBLEM:3<BR>
+^^^^^^^^^<BR>
+<BR>
+PART A)Show that the Chebyshev polynomials of the ﬁrst kind satisfy the<BR>
+recurrence:<BR>
+<BR>
+.. math:: T_{n+1}=2 x T_{n}-T_{n-1}<BR>
+<BR>
+ proof: :math:`T_{n+1}(x)=cos((n+1)cos^{-1}x)`\ <BR>
+:math:`\implies T_{n+1}(x)=cos(ncos^{-1}x+cos^{-1}x)`,<BR>
+:math:`\implies T_{n+1}(x)=cos(ncos^{-1}x)cos(cos^{-1}x)-sin(ncos^{-1}x)sin(cos{-1}x)`\ <BR>
+:math:`\implies T_{n+1}(x)=xT_n(x)-sin(ncos^{-1}x)sin(cos{-1}x)`................................................(1)<BR>
+now consider, :math:`T_{n-1}(x)=cos((n-1)cos^{-1}x)`\ <BR>
+:math:`\implies T_{n-1}(x)=cos(ncos^{-1}x-cos^{-1}x)`\ <BR>
+:math:`\implies T_{n-1}(x)=cos(ncos^{-1}x)cos(cos^{-1}x)+sin(ncos^{-1}x)sin(cos{-1}x)`\ <BR>
+:math:`\implies T_{n-1}(x)=xT_n(x)+sin(ncos^{-1}x)sin(cos{-1}x)`.......................................................(2)<BR>
+now ,do (1)+(2) we get,<BR>
+<BR>
+.. math:: T_{n+1}=2 x T_{n}-T_{n-1}<BR>
+<BR>
+ hence proved<BR>
+<BR>
+PART B)SHOW that :math:`T_n` is a polynomial of degree n with leading<BR>
+term coefficient =\ :math:`2^{n-1}`\  proof:<BR>
+<BR>
+take :math:`V_n(x)=sin(ncos^{-1}x)`\  now consider<BR>
+:math:`T_n(x)+i V_n(x)` \ :math:`=cos(ncos^{-1}x)+isin(ncos^{-1}x)`\ <BR>
+now put :math:`x=cosht`\  :math:`\implies T_n(x)+i V_n(x)= e^{inht}`\ <BR>
+:math:`=cosh(nt)+i sin(hnt)=(e^{iht})^n`\  :math:`=(cos ht+isin ht)^n`\ <BR>
+:math:`=(x+i\sqrt{(1-x^2)})^n`.........................................(1)<BR>
+similarly consider\ :math:`T_n(x)-i V_n(x)`\ <BR>
+:math:`=cos(ncos^{-1}x)-isin(ncos^{-1}x)`\  now put :math:`x=cosht`\ <BR>
+:math:`\implies T_n(x)-i V_n(x)= e^{-inht}`\ <BR>
+:math:`=cosh(nt)-i sin(hnt)=(e^{-iht})^n`\ <BR>
+:math:`=(cos ht-isin ht)^n`\ <BR>
+:math:`=(x-i\sqrt{(1-x^2)})^n`.........................................(2)<BR>
+now doing (1)+(2),we get<BR>
+:math:`T_n(x)=\frac{(x+i\sqrt{(1-x^2)})^n+(x-i\sqrt{(1-x^2)})^n}{2}`<BR>
+<BR>
+WHAT IS THE LEADING COEFFICIENT??? To find that let us do a binomial<BR>
+expansion of both terms<BR>
+:math:`T_n(x)=\frac{(x+i\sqrt{(1-x^2)})^n+(x-i\sqrt{(1-x^2)})^n}{2}`\ <BR>
+:math:`\implies T_n(x)= \frac{2{n \choose 0} x^n+{n \choose 2}x^{n-2}(i\sqrt{(1-x^2)})^2+{n \choose 4}x^{n-4}(i\sqrt{(1-x^2)})^4+.........}{2}`<BR>
+So from above expresion for :math:`T_n(x)` it is obvious that it is a<BR>
+degree n polynomial what would be the leading coefficient?? We have to<BR>
+fin the coefficient of x^n in above expression it would be\ <BR>
+<BR>
+.. math::<BR>
+<BR>
+   =<BR>
+           {n \choose 0}+{n \choose 2}+{n \choose 4}+.........<BR>
+<BR>
+.. math:: =2^{n-1}<BR>
+<A NAME="2"></A><BR>
+<A NAME="3"></A>PART C) ZEROS OF THE POLYNOMIAL: :math:`T_n(x)=cos(ncos^{-1}x))` this<BR>
+would have a root when :math:`ncos{-1}x=\frac{(2m+1)\pi}{2}` or<BR>
+equivalently :math:`cos^{-1}x=\frac{(2m+1)\pi</B></FONT>}{2}` <FONT color="#77bfc7"><A HREF="javascript:ZweiFrames('match21-1.html#2',3,'match21-top.html#2',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>or<BR>
+:math:`x=cos(\frac{(2m+1)\pi</B></FONT>}{2})` :<FONT color="#6cc417"><A HREF="javascript:ZweiFrames('match21-1.html#3',3,'match21-top.html#3',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>math:`\forall m \in {0,1,2....n}`<BR>
+<BR>
+PART D) since the polynomial has n+1 roots it is going to alter signs<BR>
+exactly n+1 times in the interval [+1,-1]<BR>
+<BR>
+PROBLEM :4<BR>
+^^^^^^^^^^<BR>
+<BR>
+PART A) CASE 1: CONSIDER UNIFORMLY SPACED NODES<BR>
+<BR>
+.. code:: ipython3<BR>
+<BR>
+    import numpy as np<BR>
+    import matplotlib.pyplot as plt<BR>
+    from numpy import linalg as LA</B></FONT><BR>
+<A NAME="4"></A>    for n in range (1,50) :<BR>
+        nodes = []<BR>
+<A NAME="5"></A>        <BR>
+<A NAME="6"></A>        <FONT color="#151b8d"><A HREF="javascript:ZweiFrames('match21-1.html#4',3,'match21-top.html#4',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>V=np.zeros(shape=(n,n))<BR>
+        for i in range (0,n</B></FONT>):<BR>
+            nodes.<FONT color="#c8c2a7"><A HREF="javascript:ZweiFrames('match21-1.html#5',3,'match21-top.html#5',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>append(-1+(2*i+1)/n)<BR>
+<A NAME="7"></A>        for</B></FONT> <FONT color="#50ebec"><A HREF="javascript:ZweiFrames('match21-1.html#6',3,'match21-top.html#6',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>i in range (0,n</B></FONT>):<BR>
+            V[:i]=np.power(nodes,i)<BR>
+        Y=LA.cond(V)<BR>
+        <FONT color="#c58917"><A HREF="javascript:ZweiFrames('match21-1.html#7',3,'match21-top.html#7',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>plt.plot(n,Y)<BR>
+    plt.show</B></FONT>();<BR>
+        <BR>
+        <BR>
+        <BR>
+<A NAME="9"></A><A NAME="8"></A><BR>
+<BR>
+<BR>
+.. image:: M%20SOWMIA%<FONT color="#bce954"><A HREF="javascript:ZweiFrames('match21-1.html#8',3,'match21-top.html#8',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>20-%20ma19m020_2_files/M%20SOWMIA%20</B></FONT>-%<FONT color="#f88017"><A HREF="javascript:ZweiFrames('match21-1.html#9',3,'match21-top.html#9',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>20ma19m020_2_15_0.png</B></FONT><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+::<BR>
+<BR>
+<BR>
+    ---------------------------------------------------------------------------<BR>
+<BR>
+    NameError                                 Traceback (most recent call last)<BR>
+<BR>
+    &lt;ipython-input-32-230a50d90e97&gt; in &lt;module&gt;<BR>
+    ----&gt; 1 cw<BR>
+    <BR>
+<BR>
+    NameError: name 'cw' is not defined<BR>
+<BR>
+<BR>
+<BR>
+
+</BODY>
+</HTML>

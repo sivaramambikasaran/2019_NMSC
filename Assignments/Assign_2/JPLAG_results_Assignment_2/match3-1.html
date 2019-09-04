@@ -1,0 +1,424 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>Nibedita Roy - ma19m012_2.rst</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>Nibedita Roy - ma19m012_2.rst</CENTER></H3><HR>
+<A NAME="0"></A><BR>
+#### Q1<BR>
+<BR>
+.. <FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#0',2,'match3-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+Let<BR>
+:math:`V_n = \begin{vmatrix}  1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-2} &amp; x_1^{n-1} \\  1 &amp; x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^{n-2} &amp; x_2^{n-1} \\  1 &amp; x_3 &amp; x_3^2 &amp; \cdots &amp; x_3^{n-2} &amp; x_3^{n-1} \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\  1 &amp; x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-2} &amp; x_{n-1}^{n-1} \\  1 &amp; x_n &amp; x_n^2 &amp; \cdots &amp; x_n^{n-2} &amp; x_n^{n-1} \end{vmatrix}`.<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+ By Multiple of Row Added to Row of Determinant we can subtract row 1<BR>
+from each of the other rows and leave :math:`V_n` unchanged:<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`V_n = \begin{vmatrix}  1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-2} &amp; x_1^{n-1} \\  0 &amp; x_2 - x_1 &amp; x_2^2 - x_1^2 &amp; \cdots &amp; x_2^{n-2} - x_1^{n-2} &amp; x_2^{n-1} - x_1^{n-1} \\  0 &amp; x_3 - x_1 &amp; x_3^2 - x_1^2 &amp; \cdots &amp; x_3^{n-2} - x_1^{n-2} &amp; x_3^{n-1} - x_1^{n-1} \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\  0 &amp; x_{n-1} - x_1 &amp; x_{n-1}^2 - x_1^2 &amp; \cdots &amp; x_{n-1}^{n-2} - x_1^{n-2} &amp; x_{n-1}^{n-1} - x_1^{n-1} \\  0 &amp; x_n - x_1 &amp; x_n^2 - x_1^2 &amp; \cdots &amp; x_n^{n-2} - x_1^{n-2} &amp; x_n^{n-1} - x_1^{n-1} \end{vmatrix}`<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+ Similarly without changing the value of :math:`V_n`, we can subtract,<BR>
+in order:<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`x_1` times column :math:`n-1` from column :math:`n`<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`x_1` times :math:`n-2` from column :math:`n-1`<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+and so on, till we subtract:<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`x_1` times column :math:`1` from column :math:`2`.<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+The first row will vanish all apart from the first element<BR>
+:math:`a_{11} = 1`.<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+On all the other rows, we get, with new :math:`i` and :math:`j`:<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`a_{ij} = \left({x_i^{j-1} - x_1^{j-1}}\right) - \left({x_1 x_i^{j-2} - x_1^{j-1}}\right) = \left({x_i - x_1}\right) x_i^{j-2}`:<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`V_n = \begin{vmatrix}  1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\  0 &amp; x_2 - x_1 &amp; \left({x_2 - x_1}\right) x_2 &amp; \cdots &amp; \left({x_2 - x_1}\right) x_2^{n-3} &amp; \left({x_2 - x_1}\right) x_2^{n-2} \\  0 &amp; x_3 - x_1 &amp; \left({x_3 - x_1}\right) x_3 &amp; \cdots &amp; \left({x_3 - x_1}\right) x_3^{n-3} &amp; \left({x_3 - x_1}\right) x_3^{n-2} \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\  0 &amp; x_{n-1} - x_1 &amp; \left({x_{n-1} - x_1}\right) x_{n-1} &amp; \cdots &amp; \left({x_{n-1} - x_1}\right) x_{n-1}^{n-3} &amp; \left({x_{n-1} - x_1}\right) x_{n-1}^{n-2}\\  0 &amp; x_n - x_1 &amp; \left({x_n - x_1}\right) x_n &amp; \cdots &amp; \left({x_n - x_1}\right) x_n^{n-3} &amp; \left({x_n - x_1}\right) x_n^{n-2} \end{vmatrix}`<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+ For all rows apart from the first, the :math:`k`\ th row has the<BR>
+constant factor :math:`\left({x_k - x_1}\right)`.<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+So we can extract all these as factors, and from Determinant with Row<BR>
+Multiplied by Constant, we get:<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`\displaystyle V_n = \prod_{k \mathop = 2}^n \left({x_k - x_1}\right) \begin{vmatrix}  1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\  0 &amp; 1 &amp; x_2 &amp; \cdots &amp; x_2^{n-3} &amp; x_2^{n-2} \\  0 &amp; 1 &amp; x_3 &amp; \cdots &amp; x_3^{n-3} &amp; x_3^{n-2} \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\  0 &amp; 1 &amp; x_{n-1} &amp; \cdots &amp; x_{n-1}^{n-3} &amp; x_{n-1}^{n-2}\\  0 &amp; 1 &amp; x_n &amp; \cdots &amp; x_n^{n-3} &amp; x_n^{n-2} \end{vmatrix}`<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+ From Determinant with Unit Element in Otherwise Zero Row, we can see<BR>
+that this directly gives us:<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`\displaystyle V_n = \prod_{k \mathop = 2}^n \left({x_k - x_1}\right) \begin{vmatrix}  1 &amp; x_2 &amp; \cdots &amp; x_2^{n-3} &amp; x_2^{n-2} \\  1 &amp; x_3 &amp; \cdots &amp; x_3^{n-3} &amp; x_3^{n-2} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\  1 &amp; x_{n-1} &amp; \cdots &amp; x_{n-1}^{n-3} &amp; x_{n-1}^{n-2}\\  1 &amp; x_n &amp; \cdots &amp; x_n^{n-3} &amp; x_n^{n-2} \end{vmatrix}`<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+and it can be seen that:<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`\displaystyle V_n = \prod_{k \mathop = 2}^n \left({x_k - x_1}\right) V_{n-1}`<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+ :math:`V_2`, by the time we get to it (it will concern elements<BR>
+:math:`x_{n-1}` and :math:`x_n`), can be calculated directly using the<BR>
+formula for calculating a Determinant of Order 2:<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/p&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;dd&gt;<BR>
+<BR>
+:math:`V_2 = \begin{vmatrix}  1 &amp; x_{n-1} \\  1 &amp; x_n \end{vmatrix} = x_n - x_{n-1}`<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dd&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;/dl&gt;<BR>
+<BR>
+.. raw:: html<BR>
+<BR>
+   &lt;p&gt;<BR>
+<BR>
+ so the polynomial is $V\_n = :raw-latex:`\sum`\_{1:raw-latex:`\leq `i &lt;<BR>
+j :raw-latex:`\leq `n} (x\_j-x\_i</B></FONT>) $<BR>
+<BR>
+<A NAME="2"></A><A NAME="1"></A>Q3.<BR>
+---<BR>
+<BR>
+(<FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#1',2,'match3-top.html#1',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>a)The chebyshev polynomials of the first kind</B></FONT> are <FONT color="#77bfc7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#2',2,'match3-top.html#2',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>defined as<BR>
+<BR>
+.. math:: T_n(x)=cos(ncos^{-1}(x))<BR>
+<BR>
+ We have to prove that<BR>
+<BR>
+.. math:: T_{n+1}(x)=2xT_{n}(x)-T_{n-1}(x) <BR>
+<BR>
+ with<BR>
+<BR>
+.. math:: T_0=1 and T_1=x<BR>
+<BR>
+ We know that<BR>
+<BR>
+.. math:: cos(n+1)\theta-cos(n-1)\theta=2cos\theta cos n\theta \implies cos(n+1)\theta=2cos\theta cos n\theta +cos(n-1)\theta<BR>
+<BR>
+\  from this relation we can conclude that,<BR>
+<BR>
+.. math:: T_{n+1}(x)=2xT_{n}(x)-T_{n-1}(x) <BR>
+<BR>
+ (b)From recurrence relation we have<BR>
+$T\_{n}(x)=2xT\_{n-1}(x)-T\_{n-2}(x)<BR>
+:math:`&lt;br&gt;&lt;br&gt;=2x`\ (2xT\_{n-2}(x)-T\_{n-3}(x))-T\_{n-2}(x):math:`&lt;br&gt;&lt;br&gt;=`\ (4x:sup:`2-1)T\_{n-2}(x)-2xT\_{n-3}(x)\ :math:`&lt;br&gt;&lt;br&gt;=`\ (4x`\ 2-1)(2xT\_{n-3}(x)-T\_{n-4}(x))-2xT\_{n-3}(x)\ :math:`&lt;br&gt;&lt;br&gt;=`\ (8x:sup:`3-4x)T\_{n-3}(x)-(4x`\ 2-1)T\_{n-4}(x)$......<BR>
+continuing in this manner at the last stage we will get the coeffitient<BR>
+of :math:`x^n` is :math:`2^{n-1}`\  (c)To calculate the zeros of<BR>
+:math:`T_{n+1}(x)` we have to solve<BR>
+<BR>
+.. math:: T_{n+1}(x)=0<BR>
+<BR>
+\  Now :math:`T_{n+1}(x)=0` :math:`\implies cos(ncos^{-1}(x))=0`\ $<BR>
+:raw-latex:`\implies `(n+1)arccos(x)=(2k+1):raw-latex:`\frac{\pi}{2}`,k=0,1,2,.....n\ :math:`&lt;br&gt;`<BR>
+:raw-latex:`\implies `x=cos(:raw-latex:`\frac{2k+1}{2n+2}`:raw-latex:`\frac{\pi}{2}`),k=0,1,2,.....n$<BR>
+Therefore the zeros of :math:`T_{n+1}(x)` are<BR>
+:math:`x_k=cos(\frac{2k+1}{2n+2}\frac{\pi}{2}),k=0,1,2,.....n` since the<BR>
+value of cos(x) belongs to [-1,1] the zeros of :math:`T_{n+1}(x)` are in<BR>
+[-1,1]. (d) We can solve this from the definition :math:`T_{n}(x)=1` or<BR>
+-1:math:`\implies cos(ncos^{-1}(x))=1`\ or -1 Now cos :math:`\theta` =1<BR>
+if :math:`\theta` is a multiple of even multiple of :math:`\pi` and cos<BR>
+:math:`\theta` =-1 if :math:`\theta` is a multiple of odd multiple of<BR>
+:math:`\pi`.Therefore,<BR>
+<BR>
+.. math:: ncos^{-1}(x)=k\pi<BR>
+<BR>
+.. math::  \implies cos^{-1}(x)=\frac{k\pi}{n}<BR>
+<BR>
+ The range of the inverse cosine is [0, :math:`\pi`], so we get<BR>
+<BR>
+.. math:: cos^{-1}(x)=0, \frac{\pi}{n},\frac{2\pi}{n},.....\frac{(n-1)\pi}{n},\pi<BR>
+<BR>
+ So, there are exactly n+1 solutions in between 1 and -1.<BR>
+<BR>
+.. math:: x=1, cos\frac{\pi}{n}, cos\frac{2\pi}{n},.......1.<BR>
+<BR>
+(e) Since :math:`x_0`,\ :math:`x_1`,....\ :math:`x_n` are roots of<BR>
+    :math:`T_{n+1}(x)`<BR>
+<BR>
+    .. math:: T_{n+1}(x)=2^n(x-x_0)(x-x_1).....(x-x_n)<BR>
+<BR>
+     Therefore,<BR>
+<BR>
+    .. math:: |\prod\limits_{k=0}^{n}(x-x_k)|=\frac{|T_{n+1}(x)|}{2^n} \leq \frac{1}{2^n},<BR>
+<A NAME="3"></A><BR>
+    \ since, :math:`T_{n+1}` is a function of cos,<BR>
+    :math:`T_{n+1}(x) \leq 1 \forall x \in [-1,1]`<BR>
+(f)  In this</B></FONT> question <FONT color="#6cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#3',2,'match3-top.html#3',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>we are considering<BR>
+    :math:`F(x)=P_{n+1}(x)-\frac{T_{n+1}(x)}{2^{n}}`, where<BR>
+    :math:`P_{n+1}(x)=\prod\limits_{k=0}^{n}(x-y_k)` and :math:`y_k` are<BR>
+    arbitrary nodes also<BR>
+<A NAME="4"></A>    $P\_{n+1}(x):raw-latex:`\leq`:raw-latex:`\frac{1}{2^{n}}` $. Now we<BR>
+<A NAME="5"></A>    will show that F is a polynomial of degree n+1, which will lead a<BR>
+    contradiction. Now, :math:`F(1)=P_{n+1}(1)-\frac{1}{2^{n}}\leq 0`<BR>
+    :math:`F(\frac{\pi}{n+1})=P_{n+1</B></FONT>}(\frac{\<FONT color="#151b8d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#4',2,'match3-top.html#4',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>pi}{n+1})+\frac{1}{2^{n}}\geq 0`<BR>
+    :math:`F(\frac{2\pi}{n+1})=P_{n+1</B></FONT>}(\frac{<FONT color="#c8c2a7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#5',2,'match3-top.html#5',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>2\pi}{n+1})-\frac{1}{2^{n}}\leq 0`<BR>
+    and so on. There are n+2 sign changes for F so there must ne n+1<BR>
+    zero for F. Therefore F must be a polynomial of degree n+1, but<BR>
+<BR>
+    .. math:: F(x)=P_{n+1}(x)-\frac{T_{n+1}(x)}{2^{n}}<BR>
+<BR>
+     So the max degree of F can be n, hence we get a contradiction.<BR>
+    Hence F is identically zero. Therefore we can conclude that<BR>
+    Chebyshev nodes minimizes<BR>
+    max\ :math:`|\prod\limits_{k=0}^{n}(x-x_k</B></FONT>)|`<BR>
+<BR>
+Q5<BR>
+^^<BR>
+<A NAME="9"></A><A NAME="8"></A><BR>
+ we have to prove for any set of interpolation nodes<BR>
+<A NAME="7"></A><BR>
+.. <FONT color="#bce954"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#8',2,'match3-top.html#8',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:: \sum_{j=0}^{n}{x</B></FONT>_i}^<FONT color="#f88017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#9',2,'match3-top.html#9',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>ml_j(x)=x^m</B></FONT> ,\forall m \in {0,1,2....n}<BR>
+<BR>
+ Where :<FONT color="#c58917"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#7',2,'match3-top.html#7',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`l_j` is the</B></FONT> jth Lagrange Polynomial. Here the mathematical<BR>
+fuction we want to interpolate is :math:`x^m` Let<BR>
+:math:`x^m=f_0l_0(x)+f_1l_1(x)+........f_nl_n(x)` where :math:`f_i` are<BR>
+functional value of :math:`x^m` at an arbitrary node :math:`x_i` and<BR>
+<A NAME="6"></A>:math:`i \in {0,1,2....n}`\  since, :math:`f_i={x_i}^m`, putting these<BR>
+value altogether we will get<BR>
+<BR>
+.. math:: \<FONT color="#50ebec"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match3-0.html#6',2,'match3-top.html#6',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>sum_{j=0}^{n}{x</B></FONT>_i}^ml_j(x)=x^m<BR>
+<BR>
+
+</BODY>
+</HTML>

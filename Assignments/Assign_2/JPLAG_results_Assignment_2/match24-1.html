@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>DEEPTI SINGH - ma19m003_2_nmsc.rst</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>DEEPTI SINGH - ma19m003_2_nmsc.rst</CENTER></H3><HR>
+<BR>
+ASSIGNMENT-03<BR>
+~~~~~~~~~~~~~<BR>
+<BR>
+DEEPTI SINGH (MA19M003)<BR>
+^^^^^^^^^^^^^^^^^^^^^^^<BR>
+<BR>
+Q-01<BR>
+^^^^<BR>
+<BR>
+(a)<BR>
+<A NAME="29"></A><A NAME="28"></A><A NAME="18"></A><A NAME="14"></A><A NAME="9"></A>^^^<BR>
+<BR>
+ Given that,<BR>
+:math:`V_n = \<FONT color="#717d7d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#28',2,'match24-top.html#28',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>begin{vmatrix}  1 &amp; x_{0</B></FONT>} &amp; \<FONT color="#faafba"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#29',2,'match24-top.html#29',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>cdots &amp; x_0^{n-1} &amp; x</B></FONT>_0^{n} \\  <FONT color="#f52887"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#14',2,'match24-top.html#14',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{1} &amp; \cdots &amp; x_1^{n-1</B></FONT>} &amp; x_1^{n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \<FONT color="#f62817"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#18',2,'match24-top.html#18',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>vdots \\  1 &amp; x_{n} &amp; \cdots &amp; x_n^{n-1</B></FONT>} &amp; <FONT color="#f88017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#9',2,'match24-top.html#9',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_n^{n} \\ \end{vmatrix</B></FONT>}`\ <BR>
+<A NAME="19"></A>let :math:`P(n)` be the proposition:<BR>
+:math:`V_{n}=\prod_{0\leq i&lt;j\leq n}(x_{i}-x_{j})`\  for<BR>
+:math:`n=1, P(1)` holds, :math:`|1|=1.`\  for :math:`n=1, P(2):`<BR>
+:math:`<FONT color="#4e9258"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#19',2,'match24-top.html#19',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>V_{2}=\begin{vmatrix} 1 &amp; x</B></FONT>_{0}\\ 1 &amp; x_{1}\\ \end{vmatrix}`\ =\ :math:`x_{1}-x_{0}`\ <BR>
+<A NAME="5"></A>By induction hypothesis, let :math:`P(k)`<BR>
+holds.\ :math:`\Rightarrow V_{k}=\prod_{0\leq i&lt;j\leq k}(x_{i}-x_{j})`\ <BR>
+for :math:`P(k+1):`<BR>
+:math:`\hspace {30pt}V_{k+<FONT color="#c8c2a7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#5',2,'match24-top.html#5',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1}=\begin{vmatrix}  1 &amp; x_{0</B></FONT>} &amp; \cdots &amp; x_0^{k} &amp; x_0^{k+1} \\  1 &amp; x_{1} &amp; \cdots &amp; x_1^{k} &amp; x_1^{k+1} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\  1 &amp; x_{k+1} &amp; \cdots &amp; x_{k+1}^{k} &amp; x_k^{k+1} \\ \end{vmatrix}`\ By<BR>
+using the expansion theorem for determinant be used to expand<BR>
+:math:`V_n` in terms of the first row. It can be seen that it is a<BR>
+polynomial in :math:`x` whose degree is no greater than :math:`k`. let<BR>
+the polynomial be denoted as :math:`f(x)`. Let :math:`x_r` be<BR>
+substituted for x in the determinant. Then two of its rows will bw same,<BR>
+then deteminant will be zero. Such a substitution in the deteminant is<BR>
+<A NAME="113"></A>equivalent to substituing :math:`a_r` for :math:`x` in :math:`f(x)`. It<BR>
+follows that :math:`f(x_1)=f(x_2)=f(x_3)=...f(x_{k+1})=0`. so<BR>
+<A NAME="120"></A>:math:`f(x)` is divisible by each of the factors<BR>
+:math:`<FONT color="#4863a0"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#113',2,'match24-top.html#113',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_1,x-x_2</B></FONT>,x-x_3,...,x-x_{k+1}`. All these are distinct,<BR>
+otherwise the determinant will be zero. So<BR>
+<A NAME="17"></A><A NAME="16"></A>:math:`f(x)=C(<FONT color="#151b8d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#120',2,'match24-top.html#120',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_1)(x-x_2</B></FONT>)...(x-x_{k+1})`. As the degree of<BR>
+:math:`f(x)` is no greater than :math:`k`, it follows that :math:`C` is<BR>
+independent of :math:`x`. then the coefficients of :math:`x^k` is:<BR>
+:math:`\hspace {30pt}\<FONT color="#3090c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#16',2,'match24-top.html#16',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>begin{vmatrix}  1 &amp; x_{1} &amp; \cdots &amp; x_1</B></FONT>^{k} &amp; x_1^{k+<FONT color="#800517"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#17',2,'match24-top.html#17',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1} \\  1 &amp; x_{2} &amp; \cdots &amp; x_2</B></FONT>^{k} &amp; x_2^{k+1} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\  1 &amp; x_{k+1} &amp; \cdots &amp; x_{k+1}^{k} &amp; x_k^{k+1} \\ \end{vmatrix}`\ <BR>
+then by induction hypothesis,<BR>
+\ :math:`=\prod_{0\leq i&lt;j\leq k+1}(x_i-x_j)`\  so<BR>
+<A NAME="23"></A>:math:`f(x)=(x-x_1)(x-x_2)...(x-x_{k+1})(\prod_{0\leq i&lt;j\leq k+1}(x_i-x_j))`\ <BR>
+<A NAME="24"></A>Substitute :math:`x_{0}`\ for $x $. So :math:`P(k)\Rightarrow(k+1)` and<BR>
+<A NAME="25"></A>the result follows, by the PMI,<BR>
+<A NAME="26"></A>:math:`V_n=\prod_{0\leq i&lt;j\leq n}(x_i-x_j)`\  :math:`V_n` <FONT color="#f660ab"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#23',2,'match24-top.html#23',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>is the<BR>
+polynomial in :math:`x</B></FONT>_i`, all the entries of the :math:`i`\ <FONT color="#ada96e"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#24',2,'match24-top.html#24',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>th column<BR>
+have the total degree :math</B></FONT>:`i`. <FONT color="#87f717"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#25',2,'match24-top.html#25',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>Thus all terms of the determinant have<BR>
+the total degree: :math:`\hspace</B></FONT> {30pt} 0+1+2+...+n=\frac{(<FONT color="#95b9c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#26',2,'match24-top.html#26',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>n(n+1)}{2}`<BR>
+<BR>
+<A NAME="27"></A>(b</B></FONT>)<BR>
+^^^<BR>
+<BR>
+As, :math:`V_n=\prod_{0\leq i&lt;j\leq n}(x_i-x_j)`\  <FONT color="#e77471"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#27',2,'match24-top.html#27',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>if :math:`x_i=x_j`,<BR>
+for :math:`i\neq j` then<BR>
+:math</B></FONT>:`V_n=\prod_{0\leq i&lt;j\leq n}(x_i-x_i)`\ \ :math:`\hspace {50pt}\Rightarrow V_n=0`<BR>
+<BR>
+(c)<BR>
+^^^<BR>
+<BR>
+As, :math:`V_n=\prod_{0\leq i&lt;j\leq n}(x_i-x_j)`\  so :math:`x_i-x_j` is<BR>
+the factor of :math:`V_n.`<BR>
+<BR>
+(d)<BR>
+<A NAME="35"></A><A NAME="34"></A><A NAME="31"></A><A NAME="30"></A><A NAME="12"></A><A NAME="10"></A><A NAME="4"></A><A NAME="0"></A>^^^<BR>
+<A NAME="32"></A><BR>
+Let<BR>
+<A NAME="36"></A><A NAME="33"></A><A NAME="20"></A><A NAME="6"></A><A NAME="3"></A><A NAME="2"></A><A NAME="1"></A>\ :math:`V_n = \<FONT color="#b041ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#10',2,'match24-top.html#10',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>begin{vmatrix}  1 &amp; x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n</B></FONT>-1} &amp; <FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#0',2,'match24-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_0^{n} \\  1 &amp; x_1 &amp; x_1^2</B></FONT> &amp; \<FONT color="#f9966b"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#30',2,'match24-top.html#30',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>cdots &amp; x_1^{n-1</B></FONT>} &amp; <FONT color="#827d6b"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#34',2,'match24-top.html#34',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_1^{n} \\  1 &amp; x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^{n</B></FONT>-1} &amp; x_2^{<FONT color="#3b9c9c"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#12',2,'match24-top.html#12',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>n} \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots</B></FONT> &amp; \<FONT color="#41a317"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#35',2,'match24-top.html#35',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>vdots \\  1 &amp; x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-1} &amp; x</B></FONT>_{n-1}^{n} \\  <FONT color="#151b8d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#4',2,'match24-top.html#4',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_n &amp; x_n^2</B></FONT> &amp; \cdots &amp; x_n^{n-1} &amp; <FONT color="#3ea99f"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#31',2,'match24-top.html#31',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_n^{n} \end{vmatrix</B></FONT>}`\ <BR>
+<A NAME="37"></A>replace :math:`x_n` with :math:`x`, then :math:`V_n` will become <FONT color="#82cafa"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#32',2,'match24-top.html#32',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>a<BR>
+<A NAME="43"></A><A NAME="42"></A><A NAME="41"></A><A NAME="40"></A><A NAME="39"></A><A NAME="38"></A>function of :math:`x`\ <BR>
+:math</B></FONT>:`<FONT color="#736aff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#33',2,'match24-top.html#33',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>P(x) = \begin{vmatrix}  1 &amp; x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-1} &amp; x</B></FONT>_<FONT color="#50ebec"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#6',2,'match24-top.html#6',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>0^{n} \\  1 &amp; x_1 &amp; x_1^2</B></FONT> &amp; \cdots &amp; x_1^{n-1} &amp; <FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#1',2,'match24-top.html#1',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_1^{n} \\  1 &amp; x_2 &amp; x_2^2</B></FONT> &amp; \<FONT color="#77bfc7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#2',2,'match24-top.html#2',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>cdots &amp; x_2^{n-1} &amp; x</B></FONT>_2^{n} \\ \<FONT color="#6cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#3',2,'match24-top.html#3',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots</B></FONT> &amp; \vdots \\  1 &amp; x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-1} &amp; x_{n-1}^{n} \\  1 &amp; x&amp; <FONT color="#ff00ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#36',2,'match24-top.html#36',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x^2 &amp; \cdots &amp; x^{n</B></FONT>-<FONT color="#d4a017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#20',2,'match24-top.html#20',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1} &amp; x^{n}  \end{vmatrix</B></FONT>}`\ <BR>
+use row operation by <FONT color="#810541"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#37',2,'match24-top.html#37',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>last row<BR>
+<A NAME="22"></A>:math:`P(x</B></FONT>) = \<FONT color="#348781"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#38',2,'match24-top.html#38',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>begin{vmatrix}  x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-1} &amp; x_0^{n} \\  x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-1} &amp; x_1^{n} \\  x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^{n-1} &amp; x_2^{n} \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\  x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-1} &amp; x_{n-1}^{n} \\  \end{vmatrix</B></FONT>}+ \<FONT color="#152dc6"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#39',2,'match24-top.html#39',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>begin{vmatrix}  1 &amp; x_0^2 &amp; \cdots &amp; x_0^{n</B></FONT>-1} &amp; <FONT color="#347235"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#40',2,'match24-top.html#40',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_0^{n} \\  1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n</B></FONT>-1} &amp; <FONT color="#f87a17"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#41',2,'match24-top.html#41',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_1^{n} \\  1 &amp; x_2^2 &amp; \cdots &amp; x_2^{n</B></FONT>-1} &amp; <FONT color="#c57717"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#42',2,'match24-top.html#42',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_2^{n} \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\  1 &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-1} &amp; x_{n-1}^{n} \\  \end{vmatrix</B></FONT>}x+...+\<FONT color="#c22817"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#43',2,'match24-top.html#43',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>begin{vmatrix}  1 &amp; x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-1} \\  1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-1} \\  1 &amp; x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^{n-1} \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\  1 &amp; x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-1} \\  \end{vmatrix</B></FONT>}x^{n-1}`\ <BR>
+As, :math:`P(x_i)=0;`\  Thus :math:`P(x)=C(x-x_1)(x-x_2)...(x-x_n)`\ <BR>
+substitute :math:`x=x_n`, then<BR>
+<A NAME="15"></A><A NAME="7"></A>:math:`P(x)=C\prod _{1\<FONT color="#4cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#22',2,'match24-top.html#22',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>leq j&lt;i\leq n</B></FONT>}(x_i-x_j)`\ <BR>
+<A NAME="45"></A><BR>
+#### (e) Given that,<BR>
+:math:`|V| = \begin{vmatrix}  1 &amp; x_{0} &amp; \cdots &amp; x_0^{n-1} &amp; x_0^{n} \\  1 &amp; x_{1} &amp; \<FONT color="#c58917"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#7',2,'match24-top.html#7',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>cdots &amp; x_1^{n-1} &amp; x</B></FONT>_1^{n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\  <FONT color="#3bb9ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#15',2,'match24-top.html#15',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{n} &amp; \cdots &amp; x_n^{n-1</B></FONT>} &amp; x_n^{n} \\ \end{vmatrix}`\ <BR>
+<A NAME="47"></A><A NAME="46"></A>As,\ :math:`|V|= <FONT color="#79d867"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#45',2,'match24-top.html#45',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>C \left({x - x_0}\right) \left({x -x_1}\right) \dotsm \left({x - x_{n} }\right)`,<BR>
+where :math:`C` is the leading coefficient (with :math:`n` power).<BR>
+<A NAME="49"></A><A NAME="48"></A>Therefore,<BR>
+\ :math</B></FONT>:`|V|= <FONT color="#92c7c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#46',2,'match24-top.html#46',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>V_{n} \left({x - x_0}\right) \left({x - x_1}\right</B></FONT>)...\<FONT color="#d16587"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#47',2,'match24-top.html#47',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>left({x - x_{n} }\right)`<BR>
+<A NAME="50"></A>which by returning :math:`x = x_{n+1}` gives:<BR>
+<A NAME="51"></A>\ :math</B></FONT>:`|<FONT color="#c57726"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#48',2,'match24-top.html#48',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>V|=V_{n+1} = V_{n} \left({x_{n+1} - x_0}\right) \left({x_{n+1} - x_1}\right</B></FONT>)...\<FONT color="#8e35ef"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#49',2,'match24-top.html#49',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>left({x_{n+1} - x_n }\right)`<BR>
+Repeating the process: \ :math:`\hspace{48pt}|V|=V_{n+1}`<BR>
+<A NAME="52"></A>\ :math:`\hspace</B></FONT>{57pt}=\<FONT color="#ff0000"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#50',2,'match24-top.html#50',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>prod_{0 \leq j &lt; n} \left({x_{n+1} - x_j}\right)V_{n}`<BR>
+\ :math:`\hspace</B></FONT>{57pt}= \<FONT color="#b38481"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#51',2,'match24-top.html#51',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>prod_{0 \leq j &lt; n} \left({x_{n+1} - x_j}\right)\ \ \prod_{0 \leq j &lt; n-1} \left({x_n - x_j}\right)V_{n-1}`<BR>
+\ :math:`\hspace</B></FONT>{57pt}:`<BR>
+\ :math:`\hspace{57pt}= \<FONT color="#2b60de"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#52',2,'match24-top.html#52',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>prod_{0 \leq j &lt; i \leq n} \left({x_i- x_j}\right)`<BR>
+, which on comparision with :math:`|V|` concludes that :math:`C=1</B></FONT>`<BR>
+<BR>
+<A NAME="53"></A>Q-02<BR>
+^^^^<BR>
+<BR>
+<FONT color="#f88158"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#53',2,'match24-top.html#53',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>Theorem: Let :math:`(q_n)_{n=0}^{\infty}` be the orthogonal family of<BR>
+monic polynomial defined by the Hilbert space<BR>
+:math:`\mathcal{H}=L^2 ([a,b],p)`. Then there is a sequence<BR>
+<A NAME="54"></A>:math:`(a_n)_{n=0}^{\infty}` of real numbers and a sequence<BR>
+:math:`(b_n)_{n=0}^{\infty}` of positive real numbers such that<BR>
+:math:`\hspace {30pt}q_{n+1}(x)=(x-a_n)q_n(x)-b_n q_{n-1}(x)`,<BR>
+<A NAME="55"></A>:math</B></FONT>:`n&gt;0`, with :math:`<FONT color="#4e8975"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#54',2,'match24-top.html#54',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>a_n=\dfrac{(xq_n , q_n)}{\|q_n\|^2}`, and<BR>
+<A NAME="56"></A>:math:`b_n=\dfrac{(\|q_n\|^2}{\|q_(n-1)\|^2</B></FONT>}` .<BR>
+<A NAME="57"></A><BR>
+Proposition: for :<FONT color="#4863a0"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#55',2,'match24-top.html#55',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`a_0 =1`, the monic Legendre polynomials are<BR>
+given by :math</B></FONT>:`<FONT color="#52d017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#56',2,'match24-top.html#56',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>q_n=\sum_{k=0}^{\lfloor{(n)/2}\rfloor} (-1)^k</B></FONT>`\ <BR>
+:math:`<FONT color="#980517"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#57',2,'match24-top.html#57',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>a_k s^{n-2k}` , with<BR>
+:math:`a_k=\dfrac{n!^2}{k!(n-k)!(n-2k)!}\dfrac{2(n-k)!}{(2n)!}`\ <BR>
+<A NAME="58"></A><BR>
+Using the Theorem, And the symmetry around :math:`x=0` imply the<BR>
+<A NAME="59"></A>existence of a sequence :math:`b_n` of positive numbers such that<BR>
+:math</B></FONT>:`<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#58',2,'match24-top.html#58',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>q_{n+1}(x)=xq_n(x)-b_n q_{n-1}(x)`<BR>
+<BR>
+Since each polynomial is monic</B></FONT>,\ :<FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#59',2,'match24-top.html#59',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`b_n=a_1(n+1)-a_1(n)`, where<BR>
+<A NAME="61"></A><A NAME="60"></A>:math:`a_1(n)` denotes the coefficient of :math:`x^{n-2</B></FONT>}`. Using the<BR>
+Proposition,<BR>
+<BR>
+<A NAME="62"></A>:math:`<FONT color="#77bfc7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#60',2,'match24-top.html#60',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>a_1(n)=\dfrac{n(n-1)}{2(2n-1</B></FONT>)} \<FONT color="#6cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#61',2,'match24-top.html#61',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>hspace{5pt}\Rightarrow \hspace{5pt} a_1(n+1)=\dfrac{n(n+1)}{2(2n+1)}`.<BR>
+<BR>
+Now, it follows</B></FONT> that,<BR>
+:math:`<FONT color="#151b8d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#62',2,'match24-top.html#62',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>b_n = \bigg(\dfrac{n(n+1)}{2(2n+1)} - \dfrac{n(n-1)}{2(2n-1)} \bigg) = \dfrac{n^2}{4n^{2} -1</B></FONT>}`<BR>
+<BR>
+Q-03<BR>
+^^^^<BR>
+<BR>
+<A NAME="64"></A><A NAME="63"></A>(i)<BR>
+<A NAME="65"></A>^^^<BR>
+<A NAME="66"></A><BR>
+<FONT color="#c8c2a7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#63',2,'match24-top.html#63',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>Let :math:`\theta=\cos^{-1}x`. So</B></FONT> that, :<FONT color="#50ebec"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#64',2,'match24-top.html#64',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`T_n(x)=\cos n\theta</B></FONT>`. And<BR>
+<A NAME="68"></A><A NAME="67"></A>:math:`\hspace {20pt}<FONT color="#c58917"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#65',2,'match24-top.html#65',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{n+1}(x)=\cos(n+1)\theta=\cos n\theta \cos\theta-\sin n\theta \sin\theta`.<BR>
+:math:`\hspace</B></FONT> {20pt}<FONT color="#bce954"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#66',2,'match24-top.html#66',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{n-1}(x)=\cos(n-1)\theta=\cos n\theta \cos\theta+\sin n\theta \sin\theta`.<BR>
+Consider<BR>
+:math</B></FONT>:`<FONT color="#f88017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#67',2,'match24-top.html#67',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{n+1}(x)-2xT_n(x)+T_{n-1}(x)=\cos n\theta \cos\theta-\sin n\theta \sin\theta-2x \cos n\theta + \cos(n-1)\theta`\ \ :math:`\hspace</B></FONT> {90pt}=\<FONT color="#b041ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#68',2,'match24-top.html#68',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>cos n\theta \cos\theta+\sin n\theta \sin\theta</B></FONT>`\ $:raw-latex:`\hspace {90pt}`<BR>
+=<BR>
+2:raw-latex:`\cos `n:raw-latex:`\theta `:raw-latex:`\cos`:raw-latex:`\theta`-2x<BR>
+:raw-latex:`\cos `n:raw-latex:`\theta `\ :math:`&lt;br&gt;`\ :raw-latex:`\hspace {90pt}`=<BR>
+2x:raw-latex:`\cos `n:raw-latex:`\theta `-2x<BR>
+:raw-latex:`\cos `n:raw-latex:`\theta `= 0$.<BR>
+<BR>
+<A NAME="71"></A>(ii)<BR>
+<A NAME="72"></A><A NAME="69"></A>^^^^<BR>
+<A NAME="73"></A><A NAME="70"></A><BR>
+<A NAME="74"></A>As, :math:`<FONT color="#842dce"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#71',2,'match24-top.html#71',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{n+1}(x)-2xT_n(x)+T_{n-1}(x)=0`\ <BR>
+<A NAME="75"></A>:math</B></FONT>:`<FONT color="#f52887"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#72',2,'match24-top.html#72',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{n+1}(x)=2xT_n(x)-T_{n-1}(x</B></FONT>)`\  and, :math:`<FONT color="#571b7e"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#69',2,'match24-top.html#69',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_0=\cos 0 =1`,<BR>
+:math</B></FONT>:`<FONT color="#3b9c9c"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#70',2,'match24-top.html#70',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_1=\cos(1.cos^{-1}x)=x=2^{1-1}x</B></FONT>`\  <FONT color="#3bb9ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#73',2,'match24-top.html#73',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>Substituting :math:`n=1`,<BR>
+<A NAME="76"></A>:math</B></FONT>:`<FONT color="#3090c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#74',2,'match24-top.html#74',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{2}(x)=2xT_1(x)-T_0(x)=2x^2 -1=2^{2-1}x^2-1`\  Substituting<BR>
+:math:`n=2`, :math</B></FONT>:`<FONT color="#800517"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#75',2,'match24-top.html#75',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{3}(x)=2xT_2(x)-T_1(x)=4x^3-3x=2^{3-1}x^3-3x`\ <BR>
+<A NAME="77"></A>Substituting :math:`n=3`,<BR>
+:math</B></FONT>:`<FONT color="#f62817"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#76',2,'match24-top.html#76',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{4}(x)=2xT_3(x)-T_2(x)=8x^4-8x^2+1=2^{4-1}x^4-8x^2+1`\ <BR>
+Substituting :math:`n=4`,<BR>
+:math</B></FONT>:`<FONT color="#4e9258"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#77',2,'match24-top.html#77',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{5}(x)=2xT_4(x)-T_3(x)=16x^5-20x^3+5x=2^{5-1}x^5-20x^3+5x</B></FONT>`\  :<BR>
+:<BR>
+<BR>
+<A NAME="78"></A>(iii)<BR>
+^^^^^<BR>
+<BR>
+Put :math:`<FONT color="#d4a017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#78',2,'match24-top.html#78',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{n+1}(x_{k})=0`\ <BR>
+:math:`\Rightarrow \cos((n+1)\cos^{-1}x_k)=0`\ <BR>
+:math:`\Rightarrow (n+1)\cos^{-1}x_k=\dfrac{(2k+1)\pi}{2}`\ <BR>
+:math:`\Rightarrow \cos^{-1}x_k=\dfrac{(2k+1)\pi}{2(n+1)}`\ <BR>
+:math:`\Rightarrow x_k=\cos\bigg(\dfrac{(2k+1)\pi}{2n+2}\bigg)`,<BR>
+:math:`\forall k \in \{0,1,2,3</B></FONT>,...,n\}`.<BR>
+<BR>
+<A NAME="79"></A>(iv)<BR>
+^^^^<BR>
+<A NAME="109"></A><A NAME="80"></A><BR>
+By definition, :math:`|<FONT color="#00ff00"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#79',2,'match24-top.html#79',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_{n}(x)|=|\cos(n\cos^{-1}x)|\leq 1`\ <BR>
+:math:`\Rightarrow 0 \leq n\cos^{-1}x \leq \pi`.<BR>
+<A NAME="81"></A>:math</B></FONT>:`|<FONT color="#4cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#80',2,'match24-top.html#80',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>T_n(x_k)|=(-1)^k</B></FONT>`, :math:`\hspace {10pt} k\<FONT color="#b38481"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#109',2,'match24-top.html#109',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>in \{0,1,2,...,n</B></FONT>\}`\ <BR>
+<A NAME="82"></A>Which shows that, :math:`T_n(x)` alterantes between +1 and -1 exactly at<BR>
+<A NAME="83"></A>:math:`n+1` points. #### (v)<BR>
+:<FONT color="#f660ab"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#81',2,'match24-top.html#81',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`T_{n+1}(x)=\dfrac{n+1}{2}\sum_{r=0}^{\lfloor{(n+1)/2}\rfloor}\dfrac{(-1)^{r}}{n+1-r} {n+1-r \choose r} (2x)^{(n-1)r}`<BR>
+<A NAME="84"></A>:math</B></FONT>:`=\<FONT color="#ada96e"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#82',2,'match24-top.html#82',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>cos((n+1)\cos^{-1}x)`\ <BR>
+:math</B></FONT>:`=\<FONT color="#87f717"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#83',2,'match24-top.html#83',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>sum_{m=0}^{\lfloor{(n+1)/2}\rfloor} {n+1 \choose 2m} x^{n+1-2m} (x^2 -1)^{m}`\ <BR>
+where :math:`{n \choose k}` is a binomial coefficient and<BR>
+<A NAME="85"></A>:math:`\lfloor x \rfloor` is the floor function</B></FONT>, <FONT color="#95b9c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#84',2,'match24-top.html#84',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>the product<BR>
+:math:`T_{n+1}(x)=2^{n}\prod_{k=1}^{n}\bigg(x-\cos\bigg[\dfrac{(2k+1)\pi}{2n+2}\bigg]\bigg)`\ <BR>
+Since, :math:`|T_{n+1}(x)|\leq 1`\  so we get,<BR>
+:math:`\hspace</B></FONT> {20pt}|<FONT color="#e77471"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#85',2,'match24-top.html#85',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>2^{n}\prod_{k=1}^{n}\bigg(x-\cos\bigg[\dfrac{(2k+1)\pi}{2n+2}\bigg]\bigg)|=|T_{n+1}(x)|`<BR>
+:math:`\Rightarrow2^{n}|\prod_{k=1}^{n}\bigg(x-\cos\bigg[\dfrac{(2k+1)\pi}{2n+2}\bigg]\bigg)|\leq 1`<BR>
+:math:`\Rightarrow |\prod_{k=1}^{n}(x-x_k)|\leq \dfrac{1}{2^n}`,<BR>
+:math:`\hspace{5pt}\forall \hspace{3pt}x \in [-1,1</B></FONT>]` .<BR>
+<BR>
+Q-04<BR>
+^^^^<BR>
+<BR>
+(a)<BR>
+^^^<BR>
+<BR>
+<A NAME="86"></A>.. code:: ipython3<BR>
+<BR>
+<A NAME="87"></A>    <BR>
+    <FONT color="#717d7d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#86',2,'match24-top.html#86',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>import numpy as np<BR>
+    from numpy import linalg as LA<BR>
+    def</B></FONT> MAT(<FONT color="#faafba"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#87',2,'match24-top.html#87',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>n):<BR>
+        list1=[]<BR>
+        for i in range(0,n):<BR>
+            #uniform nodes<BR>
+            x_i=-1+(2*i+1)/n<BR>
+            for j in range(0,n):<BR>
+                new=x_i**j<BR>
+                list1.append(new</B></FONT>)<BR>
+        Mat=np.array(list1)<BR>
+        NewM=Mat.reshape(n,n)<BR>
+        return(NewM)<BR>
+<BR>
+<BR>
+.. code:: ipython3<BR>
+<BR>
+    <BR>
+    print(MAT(5))<BR>
+    print(LA.cond(MAT(10)))<BR>
+<BR>
+<BR>
+<BR>
+.. parsed-literal::<BR>
+<BR>
+    [[ 1.     -0.8     0.64   -0.512   0.4096]<BR>
+     [ 1.     -0.4     0.16   -0.064   0.0256]<BR>
+     [ 1.      0.      0.      0.      0.    ]<BR>
+     [ 1.      0.4     0.16    0.064   0.0256]<BR>
+     [ 1.      0.8     0.64    0.512   0.4096]]<BR>
+<A NAME="88"></A>    8496.618067763222<BR>
+<BR>
+<BR>
+<FONT color="#f9966b"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#88',2,'match24-top.html#88',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>Since the condition number is very high</B></FONT> so ill-conditioned.<BR>
+<BR>
+(b)<BR>
+^^^<BR>
+<A NAME="89"></A><BR>
+Using the system of linear equation<BR>
+<BR>
+.. <FONT color="#3ea99f"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#89',2,'match24-top.html#89',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>code:: python<BR>
+<BR>
+    from scipy.interpolate import interp1d<BR>
+    import matplotlib.pyplot as plt<BR>
+    import numpy as np<BR>
+<A NAME="90"></A>    x = np.linspace(0, 100, num=20)<BR>
+    y = 1/(1+25*x*x)<BR>
+<A NAME="91"></A>    f = interp1d(x, y</B></FONT>)<BR>
+    xnew = <FONT color="#82cafa"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#90',2,'match24-top.html#90',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>np.linspace(0, 100, num=10)<BR>
+    plt.plot(x, y, 'o</B></FONT>', xnew, f(xnew),'-')<BR>
+    <FONT color="#736aff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#91',2,'match24-top.html#91',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>plt.legend(['data', 'linear'])<BR>
+    plt.show</B></FONT>()<BR>
+<BR>
+using Lagrange's polynomial<BR>
+<BR>
+.. code:: ipython3<BR>
+<BR>
+<A NAME="92"></A>    ```python<BR>
+    import numpy as np<BR>
+<A NAME="93"></A>    import scipy as np<BR>
+    <FONT color="#827d6b"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#92',2,'match24-top.html#92',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>import matplotlib.pyplot as plt</B></FONT><BR>
+    def function(x):<BR>
+        f=<FONT color="#41a317"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#93',2,'match24-top.html#93',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1/(1+25*x*x</B></FONT>)<BR>
+        return f<BR>
+    def Lagrange(xnodes,x,i):<BR>
+        f=1<BR>
+        nnodes=np.size(xnodes)<BR>
+        for j in range(0,i):<BR>
+            f=f*(x-xnodes[j])/(xnodes[i]-xnodes[j])<BR>
+        for j in range(i+1, nnodes):<BR>
+            f=f*(x-xnodes[j])/(xnodes[i]-xnodes[j])<BR>
+        return f<BR>
+    nplot=20<BR>
+    xplot=np.linspace(0,100,nplot)<BR>
+    f_actual=function(xplot)<BR>
+    plt.plot(xplot,f_actual,'-')<BR>
+    ```<BR>
+<BR>
+<BR>
+::<BR>
+<BR>
+<BR>
+      File &quot;&lt;ipython-input-1-2b8acd8b0dc9&gt;&quot;, line 1<BR>
+        ```python<BR>
+        ^<BR>
+    SyntaxError: invalid syntax<BR>
+<BR>
+<BR>
+<BR>
+(c)<BR>
+<A NAME="94"></A>^^^<BR>
+<A NAME="95"></A><BR>
+Cost for determining the :math:`P_n{(x)}` is very costly. Since, a dense<BR>
+:<FONT color="#ff00ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#94',2,'match24-top.html#94',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`(n+1)\times (n+1</B></FONT>)` linear system to be solved. This will<BR>
+<FONT color="#810541"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#95',2,'match24-top.html#95',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>generally require time proportional :math:`n^3` making large<BR>
+interpolation problem</B></FONT> interactble. cost for evaluating the polynomial is<BR>
+<A NAME="96"></A>very cheap, if the coefficients are known, using Horner's<BR>
+<A NAME="97"></A>scheme:\ :math:`a_0+a_1x+...+a_nx^n`\ <BR>
+<A NAME="98"></A>:math:`=a_0+x(a_1+x(a_2+...+x(a_{n-1}+a_n)))`\  for Lagrange's<BR>
+interpolation: We are essentially <FONT color="#348781"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#96',2,'match24-top.html#96',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>able to write a formula for<BR>
+<A NAME="100"></A><A NAME="99"></A>:math:`P_n{(x)}` without solving any</B></FONT> <FONT color="#152dc6"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#97',2,'match24-top.html#97',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>systems. However if we want to<BR>
+write :math:`P_n{(x)}-a_0+a</B></FONT>_1x+...+a_nx^<FONT color="#347235"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#98',2,'match24-top.html#98',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>n`, the cost for evaluating<BR>
+<A NAME="101"></A>:math:`a_i`'s would be very high</B></FONT>. Each :math:`l_i`'s would need to<BR>
+<A NAME="103"></A><A NAME="102"></A>exapnd. Approximately :<FONT color="#f87a17"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#99',2,'match24-top.html#99',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`n^2` operations for each :math:`l</B></FONT>_i` <FONT color="#c57717"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#100',2,'match24-top.html#100',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>and<BR>
+:math:`n^3` operations for</B></FONT> :math:`P_n{(x)}`. cost for evaluating<BR>
+<A NAME="104"></A>:<FONT color="#c22817"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#101',2,'match24-top.html#101',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`P_n{(x)}`: SIGNIFICANT We do not really need to compute the</B></FONT><BR>
+<A NAME="105"></A>:math:`a_i`'<FONT color="#e57ded"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#102',2,'match24-top.html#102',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>s beforehand if we only need to evaluate</B></FONT> :math:`P_n{(x)}` <FONT color="#79d867"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#103',2,'match24-top.html#103',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>at<BR>
+<A NAME="106"></A>selct few locations. For each</B></FONT> :math:`l_i(x)` the evaluation requires<BR>
+<A NAME="107"></A>:math:`n` substractions and :math:`n` <FONT color="#92c7c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#104',2,'match24-top.html#104',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>multiplications so that total<BR>
+<A NAME="108"></A>number of operations are</B></FONT> :math:`n^2`. #### (d) As <FONT color="#d16587"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#105',2,'match24-top.html#105',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>the total number of<BR>
+operations in</B></FONT> linear system solving <FONT color="#c57726"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#106',2,'match24-top.html#106',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>are :math:`n^3` and in lagrange</B></FONT>'s<BR>
+are :math:`n^2`. So :math:`n^2` is <FONT color="#8e35ef"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#107',2,'match24-top.html#107',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>better than :math:`n^3</B></FONT>` for computing<BR>
+the :math:`a_i`'s. So <FONT color="#ff0000"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#108',2,'match24-top.html#108',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>I would prefer interpolation by Lagrange's<BR>
+Polynomial</B></FONT>.<BR>
+<BR>
+<A NAME="112"></A><A NAME="110"></A>Q-05<BR>
+^^^^<BR>
+<BR>
+<A NAME="118"></A><A NAME="117"></A><A NAME="116"></A><A NAME="115"></A><A NAME="114"></A><A NAME="21"></A><FONT color="#4e8975"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#112',2,'match24-top.html#112',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>let :math:`p(x)=\sum_{j=0}^{n}x_{j</B></FONT>}^ml_{j}(x)`, where :math:`l_{j}` <FONT color="#2b60de"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#110',2,'match24-top.html#110',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>is<BR>
+<A NAME="111"></A>the :math:`j`\ th</B></FONT> Lagranges's Polynomial, defined as:<BR>
+<A NAME="125"></A><A NAME="124"></A><A NAME="123"></A><A NAME="122"></A><A NAME="121"></A><A NAME="119"></A>:math:`l_{j}(x)=\prod_{i=0,i\neq j}^{n}\big (\frac {(x-x_{i}}{x_{j}-x_{i}}\big)`\ <BR>
+<A NAME="44"></A><A NAME="13"></A><A NAME="11"></A><A NAME="8"></A>:math:`l_{j}(x)=\frac {(x-x_{1})(x-x_{2})...(<FONT color="#52d017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#114',2,'match24-top.html#114',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{n})}{(x_{0}-x_{1})(x_{0}-x_{2</B></FONT>})...(x_{0}-x_{n})}+\frac {(<FONT color="#980517"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#115',2,'match24-top.html#115',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{0})(x-x_{1</B></FONT>})...(<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#116',2,'match24-top.html#116',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{n})}{(x_{1}-x_{0})(x_{1}-x_{2</B></FONT>})...(x_{1}-x_{n})}+...+\frac {(<FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#117',2,'match24-top.html#117',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{0})(x-x_{1</B></FONT>})...(<FONT color="#77bfc7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#118',2,'match24-top.html#118',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{n-1})}{(x_{n}-x_{0})(x_{n}-x_{1</B></FONT>})...(<FONT color="#00ff00"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#21',2,'match24-top.html#21',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{n}-x_{n-1</B></FONT>})}`\ <BR>
+<A NAME="127"></A><A NAME="126"></A>consider :<FONT color="#f88158"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#111',2,'match24-top.html#111',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`y_{j}(x)=x_{j}^m</B></FONT>`, then<BR>
+<A NAME="128"></A>:math:`p(x)=\big (\frac {(x-x_{1})(x-x_{2})...(<FONT color="#c8c2a7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#121',2,'match24-top.html#121',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{n})}{(x_{0}-x_{1})(x_{0}-x_{2</B></FONT>})...(x_{0}-x_{n})}\big )y_{0}(x)+\big (\frac {(<FONT color="#50ebec"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#122',2,'match24-top.html#122',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{0})(x-x_{1</B></FONT>})...(<FONT color="#c58917"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#123',2,'match24-top.html#123',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{n})}{(x_{1}-x_{0})(x_{1}-x_{2</B></FONT>})...(x_{1}-x_{n})}\big )y_{1}(x)+...+\big (\frac {(<FONT color="#bce954"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#124',2,'match24-top.html#124',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{0})(x-x_{1</B></FONT>})...(<FONT color="#f88017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#125',2,'match24-top.html#125',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x-x_{n-1})}{(x_{n}-x_{0})(x_{n}-x_{1</B></FONT>})...(<FONT color="#6cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#119',2,'match24-top.html#119',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{n}-x_{n-1</B></FONT>})}\big )y_{n}(x)`\ <BR>
+<A NAME="129"></A>:math:`p(x)=\big (\frac {(x-x_{1})(x-x_{2})...(x-x_{n})}{(x_{<FONT color="#571b7e"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#11',2,'match24-top.html#11',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>0}-x_{1})(x_{0}-x</B></FONT>_{2})...(x_{0}-x_{n})}\big )x_{0}^m+\big (\frac {(x-x_{0})(x-x_{1})...(x-x_{n})}{(x_{1}-<FONT color="#e57ded"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#44',2,'match24-top.html#44',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{0})(x_{1}-x_{2</B></FONT>})...(x_{1}-x_{n})}\big )x_{1}^m+...+\big (\frac {(x-x_{0})(x-x_{1})...(x-x_{n-1})}{(<FONT color="#842dce"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#13',2,'match24-top.html#13',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{n}-x_{0})(x_{n</B></FONT>}-x_{<FONT color="#bce954"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#8',2,'match24-top.html#8',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1})...(x_{n}-x_{n</B></FONT>-1})}\big )x_{n}^m`\ <BR>
+We observe that, :math:`<FONT color="#b041ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#126',2,'match24-top.html#126',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>p(x_{0})=x_{0}^m`, :math</B></FONT>:`<FONT color="#571b7e"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#127',2,'match24-top.html#127',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>p(x_{1})=x_{1}^m`, : :<BR>
+:math</B></FONT>:`<FONT color="#3b9c9c"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#128',2,'match24-top.html#128',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>p(x_{n})=x_{n}^m`, Which shows that :math:`p(x)=x^m`, Hence,<BR>
+:math</B></FONT>:`\<FONT color="#842dce"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#129',2,'match24-top.html#129',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>sum_{j=0}^{n}x_{j}^ml_{j}(x)=x^m</B></FONT>`<BR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>sayantan banerjee - ma19m017_2.rst</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>sayantan banerjee - ma19m017_2.rst</CENTER></H3><HR>
+<A NAME="1"></A><A NAME="0"></A><BR>
+5. We consider the polynomial $:raw-latex:`\<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match5-1.html#0',3,'match5-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>sum`\ *{j=0}^{n}<BR>
+   x</B></FONT>\_j^ml\_j(x) $.where :math:`m \in \{0,1,..n\}` and :<FONT color="#f63526"><A HREF="javascript:ZweiFrames('match5-1.html#1',3,'match5-top.html#1',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>math:`l_j` is<BR>
+   the</B></FONT> :math:`jth` lagrange poynomial. Now for a certain set of<BR>
+   interpolation nodes,say :math:`\{x_0,x_1,.....x_n\}` the<BR>
+   interpolating polynomial of the function $f(x) = x^m $ is $p(x) =<BR>
+   :raw-latex:`\sum`*\ {j=0}^{n} f(x\_j)l\_j(x) =<BR>
+   :raw-latex:`\sum`\_{j=0}^{n} x\_j^ml\_j(x) $. But :math:`x^m` is<BR>
+   itself a polynomial which also interpolates itself at the points<BR>
+<A NAME="3"></A><A NAME="2"></A>   :math:`\{x_0,x_1,.....x_n\}`. Since polynomial interpolation is<BR>
+   unique hence we conclude<BR>
+<BR>
+   .. <FONT color="#77bfc7"><A HREF="javascript:ZweiFrames('match5-1.html#2',3,'match5-top.html#2',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>math::  \sum_{j=0}^{n} x</B></FONT>_j^<FONT color="#6cc417"><A HREF="javascript:ZweiFrames('match5-1.html#3',3,'match5-top.html#3',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>ml_j(x) = x^m</B></FONT> <BR>
+<BR>
+3.Chebyshev polynomials are of the form $T\_n(x) =<BR>
+:raw-latex:`\cos[n\cos^{-1}x]`. $Let :math:`x =\cos\theta`. Then<BR>
+$T\_n(x) = :raw-latex:`\cos `n:raw-latex:`\theta `$ Now $T\_{n+1}(x) =<BR>
+:raw-latex:`\cos`(n+1):raw-latex:`\theta `=<BR>
+<A NAME="4"></A>:raw-latex:`\cos`(n:raw-latex:`\theta`+:raw-latex:`\theta`) $ $ =<BR>
+:raw-latex:`\cos `n:raw-latex:`\theta `:raw-latex:`\cos`:raw-latex:`\theta`-sin:raw-latex:`\theta `:raw-latex:`\sin `n<BR>
+<A NAME="5"></A>:raw-latex:`\theta `$ =<BR>
+:math:`2 \cos n\theta \cos\theta - (sin\theta \sin n \<FONT color="#151b8d"><A HREF="javascript:ZweiFrames('match5-1.html#4',3,'match5-top.html#4',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>theta + \cos n\theta \cos</B></FONT>\theta)`<BR>
+<A NAME="6"></A>= :math:`2xT_n - \cos(n\theta - \theta)` = :math:`2xT_n - T_{n-1}`\ <BR>
+2)<FONT color="#c8c2a7"><A HREF="javascript:ZweiFrames('match5-1.html#5',3,'match5-top.html#5',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>From recurrence relation we have $T\_{n}(x)=2xT\_{n-1}(x)-T\_{n-2}(x)<BR>
+:math:`&lt;br&gt;&lt;br&gt;=2x`\ (2xT\_{n-2}(x)-T\_{n-3}(x))-T\_{n-2}(x):math:`&lt;br&gt;&lt;br&gt;=`\ (4x:sup:`2-1)T\_{n-2}(x)-2xT\_{n-3}(x)\ :math:`&lt;br&gt;&lt;br&gt;=`\ (4x`\ 2-1)(2xT\_{n-3}(x)-T\_{n-4}(x))-2xT\_{n-3}(x)\ :math:`&lt;br&gt;&lt;br&gt;=`\ (8x:sup:`3-4x)T\_{n-3}(x)-(4x`\ 2-1)T\_{n-4}(x</B></FONT>)$......<BR>
+<A NAME="7"></A>By continuing in this manner we will get the coefficient <FONT color="#50ebec"><A HREF="javascript:ZweiFrames('match5-1.html#6',3,'match5-top.html#6',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>of :math:`x^n`<BR>
+is :math:`2^{n-1</B></FONT>}`\  3)<BR>
+<BR>
+.. <FONT color="#c58917"><A HREF="javascript:ZweiFrames('match5-1.html#7',3,'match5-top.html#7',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>math:: T_{n+1}(x)=0<BR>
+<BR>
+\  Now :math:`T_{n+1}(x)=0` :math:`\implies cos(ncos^{-1}(x))=0`\ $<BR>
+:raw-latex:`\implies `(n+1)arccos(x)=(2k+1):raw-latex:`\frac{\pi}{2}`,k=0,1,2,.....n\ :math:`&lt;br&gt;`<BR>
+:raw-latex:`\implies `x=cos(:raw-latex:`\frac{2k+1}{2n+2}`:raw-latex:`\frac{\pi}{2}`),k=0,1,2,.....n$<BR>
+Therefore the zeros of :math:`T_{n+1}(x)` are<BR>
+:math:`x_k=cos(\frac{2k+1}{2n+2}\frac{\pi}{2}),k=0,1,2,.....n` since the<BR>
+<A NAME="8"></A>value of cos(x) belongs to [-1,1] the zeros of :math:`T_{n+1}(x)` are in<BR>
+<A NAME="9"></A>[-1,1</B></FONT>]. 4)<BR>
+<A NAME="10"></A><BR>
+ :<FONT color="#bce954"><A HREF="javascript:ZweiFrames('match5-1.html#8',3,'match5-top.html#8',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>math:`T_{n}(x)=1` or -1:math:`\implies cos(ncos^{-1}(x))=1`\ or -1 Now<BR>
+cos :math:`\theta` =1 if :math:`\theta</B></FONT> = 2k\<FONT color="#f88017"><A HREF="javascript:ZweiFrames('match5-1.html#9',3,'match5-top.html#9',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>pi` and cos :math:`\theta`<BR>
+=-1 if :math:`\theta</B></FONT> = (2k+1)\<FONT color="#b041ff"><A HREF="javascript:ZweiFrames('match5-1.html#10',3,'match5-top.html#10',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>pi`.Therefore,<BR>
+<BR>
+.. math:: ncos^{-1}(x)=k\pi<BR>
+<BR>
+.. math::  \implies cos^{-1}(x)=\frac{k\pi}{n}<BR>
+<BR>
+ The range of the inverse cosine is [0, :math:`\pi`], so we get<BR>
+<BR>
+.. math:: cos^{-1}(x)=0, \frac{\pi}{n},\frac{2\pi}{n},.....\frac{(n-1)\pi}{n},\pi<BR>
+<BR>
+ So, there are exactly n+1 solutions in between 1 and -1.<BR>
+<A NAME="11"></A><BR>
+.. math:: x=1, cos\frac{\pi}{n}, cos\frac{2\pi}{n},.......1</B></FONT>.<BR>
+<BR>
+ 5) <FONT color="#571b7e"><A HREF="javascript:ZweiFrames('match5-1.html#11',3,'match5-top.html#11',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>Since :math:`x_0`,\ :math:`x_1`,....\ :math:`x_n` are roots of<BR>
+:math:`T_{n+1}(x)`<BR>
+<BR>
+.. math:: T_{n+1}(x)=2^n(x-x_0)(x-x_1).....(x-x_n)<BR>
+<BR>
+ Therefore,<BR>
+<BR>
+.. math:: |\prod\limits_{k=0}^{n}(x-x_k)|=\frac{|T_{n+1}(x)|}{2^n} \leq \frac{1}{2^n</B></FONT>},<BR>
+<A NAME="12"></A><BR>
+<A NAME="13"></A>\ <BR>
+<BR>
+1.Let the determinant polynomial be :math:`p(<FONT color="#3b9c9c"><A HREF="javascript:ZweiFrames('match5-1.html#12',3,'match5-top.html#12',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x)=p_{n+1}(x</B></FONT>)`. $<BR>
+<FONT color="#842dce"><A HREF="javascript:ZweiFrames('match5-1.html#13',3,'match5-top.html#13',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>p\_{n+1}(x)=<BR>
+<BR>
+.. raw:: latex</B></FONT><BR>
+<A NAME="15"></A><A NAME="14"></A><BR>
+<A NAME="16"></A>   \begin{vmatrix}<BR>
+<A NAME="18"></A><A NAME="17"></A>   1 &amp; x_0 &amp; x_0^2 &amp; \cdots  &amp; x_0^{n-1} &amp; x_0^{n} \\<BR>
+<A NAME="19"></A>   <FONT color="#f52887"><A HREF="javascript:ZweiFrames('match5-1.html#14',3,'match5-top.html#14',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n</B></FONT>-<FONT color="#3bb9ff"><A HREF="javascript:ZweiFrames('match5-1.html#15',3,'match5-top.html#15',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>1} &amp; x_1^{n} \\<BR>
+<A NAME="20"></A>   1</B></FONT> &amp; x_2 &amp; x_2^<FONT color="#3090c7"><A HREF="javascript:ZweiFrames('match5-1.html#16',3,'match5-top.html#16',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>2 &amp; \cdots &amp; x_2^{n</B></FONT>-1} &amp; x_2^{n} \\<BR>
+   1 &amp; <FONT color="#800517"><A HREF="javascript:ZweiFrames('match5-1.html#17',3,'match5-top.html#17',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_3 &amp; x_3^2</B></FONT> &amp; \cdots &amp; <FONT color="#f62817"><A HREF="javascript:ZweiFrames('match5-1.html#18',3,'match5-top.html#18',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_3^{n-1} &amp; x</B></FONT>_3^{n} \\<BR>
+   \vdots &amp; \<FONT color="#4e9258"><A HREF="javascript:ZweiFrames('match5-1.html#19',3,'match5-top.html#19',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\<BR>
+   1 &amp; x_n</B></FONT> &amp; x_n^<FONT color="#d4a017"><A HREF="javascript:ZweiFrames('match5-1.html#20',3,'match5-top.html#20',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>2 &amp; \cdots &amp; x_n^{n</B></FONT>-1} &amp; x_n^{n}<BR>
+   \end{vmatrix}<BR>
+<BR>
+$<BR>
+<A NAME="25"></A><A NAME="24"></A><A NAME="23"></A><A NAME="22"></A><A NAME="21"></A><BR>
+Applying row operations we get<BR>
+<BR>
+:math:`p_{n+1}(x) = \begin{vmatrix} 1 &amp; x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-1} &amp; x_0^{n} \\ 1 &amp; x_1-x_0 &amp; x_1^2-x_0^2 &amp; \cdots &amp; x_1^{n-1}-x_0^{<FONT color="#00ff00"><A HREF="javascript:ZweiFrames('match5-1.html#21',3,'match5-top.html#21',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>n-1} &amp; x_1^{n</B></FONT>}-x_0^{n} \\ 1 &amp; x_2-x_0 &amp; x_2^2-x_0^<FONT color="#4cc417"><A HREF="javascript:ZweiFrames('match5-1.html#22',3,'match5-top.html#22',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>2 &amp; \cdots &amp; x_2^{n</B></FONT>-1}-x_0^{<FONT color="#f660ab"><A HREF="javascript:ZweiFrames('match5-1.html#23',3,'match5-top.html#23',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>n-1} &amp; x_2^{n</B></FONT>}-x_0^{n} \\ 1 &amp; x_3-x_0 &amp; x_3^2-x_0^<FONT color="#ada96e"><A HREF="javascript:ZweiFrames('match5-1.html#24',3,'match5-top.html#24',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>2 &amp; \cdots &amp; x_3^{n</B></FONT>-1}-x_0^{n-1} &amp; x_3^{n}-x_0^{n} \\ \<FONT color="#87f717"><A HREF="javascript:ZweiFrames('match5-1.html#25',3,'match5-top.html#25',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots</B></FONT> \\ 1 &amp; x_n-x_0 &amp; x_n^2-x_0^2 &amp; \cdots &amp; x_n^{n-1}-x_0^{n-1} &amp; x_n^{n}-x_0^{n} \end{vmatrix}`<BR>
+<A NAME="32"></A><A NAME="31"></A><A NAME="30"></A><A NAME="29"></A><A NAME="28"></A><A NAME="27"></A><A NAME="26"></A><BR>
+Further applying column operations we get<BR>
+<BR>
+:math:`p_{n+1}(x) = \<FONT color="#95b9c7"><A HREF="javascript:ZweiFrames('match5-1.html#26',3,'match5-top.html#26',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>begin{vmatrix} 1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0</B></FONT> \\ 1 &amp; x_1-x_0 &amp; (x_1-x_0)x_1 &amp; \cdots &amp; (x_1-x_0)<FONT color="#e77471"><A HREF="javascript:ZweiFrames('match5-1.html#27',3,'match5-top.html#27',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_1^{n-2} &amp; (x</B></FONT>_1-x_0 )<FONT color="#717d7d"><A HREF="javascript:ZweiFrames('match5-1.html#28',3,'match5-top.html#28',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_1^{n-1}\\ 1 &amp; x_2-x</B></FONT>_0 &amp; (x_2-x_0)<FONT color="#faafba"><A HREF="javascript:ZweiFrames('match5-1.html#29',3,'match5-top.html#29',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_2 &amp; \cdots &amp; (x_2</B></FONT>-x_0)x_2^{n-2} &amp; (x_2-x_0 )x_2^{n-1}\\ 1 &amp; x_3-x_0 &amp; (x_3-x_0)<FONT color="#f9966b"><A HREF="javascript:ZweiFrames('match5-1.html#30',3,'match5-top.html#30',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_3 &amp; \cdots &amp; (x_3</B></FONT>-x_0)x_3^{n-2} &amp; (x_3-x_0 )x_3^{<FONT color="#3ea99f"><A HREF="javascript:ZweiFrames('match5-1.html#31',3,'match5-top.html#31',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>n-1}\\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots</B></FONT> \\ 1 &amp; x_n-x_0 &amp; (x_n-x_0)<FONT color="#82cafa"><A HREF="javascript:ZweiFrames('match5-1.html#32',3,'match5-top.html#32',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_n &amp; \cdots &amp; (x_n</B></FONT>-x_0)x_n^{n-2} &amp; (x_n-x_0 )x_n^{n-1}\\ \end{vmatrix}`<BR>
+<A NAME="38"></A><A NAME="37"></A><A NAME="36"></A><A NAME="35"></A><A NAME="34"></A><A NAME="33"></A><BR>
+Taking :math:`x_k-x_0` common from k-th row for k=2,3...,n+1,we get<BR>
+<BR>
+:<FONT color="#736aff"><A HREF="javascript:ZweiFrames('match5-1.html#33',3,'match5-top.html#33',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>math:`p_{n+1}(x) = \prod\limits_{k</B></FONT>=1}^{n}(x_k-x_0)\<FONT color="#827d6b"><A HREF="javascript:ZweiFrames('match5-1.html#34',3,'match5-top.html#34',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>begin{vmatrix} 1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0</B></FONT> \\ 1 &amp; 1 &amp; x_1 &amp; \<FONT color="#41a317"><A HREF="javascript:ZweiFrames('match5-1.html#35',3,'match5-top.html#35',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>cdots &amp; x_1^{n-2} &amp; x_1^{n-1</B></FONT>}\\ 1 &amp; 1 &amp; x_<FONT color="#ff00ff"><A HREF="javascript:ZweiFrames('match5-1.html#36',3,'match5-top.html#36',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>2 &amp; \cdots &amp; x_2^{n-2} &amp; x_2^{n-1}\\ 1</B></FONT> &amp; 1 &amp; x_3 &amp; \<FONT color="#810541"><A HREF="javascript:ZweiFrames('match5-1.html#37',3,'match5-top.html#37',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>cdots &amp; x_3^{n-2} &amp; x_3^{n-1}\\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\ 1</B></FONT> &amp; 1 &amp; x_n &amp; \<FONT color="#348781"><A HREF="javascript:ZweiFrames('match5-1.html#38',3,'match5-top.html#38',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>cdots &amp; x_n^{n-2} &amp; x_n^{n-1}\\ \end{vmatrix</B></FONT>}`<BR>
+<BR>
+Hence we get :math:`p_{n+1}(x) = \prod\limits_{k=1}^{n}(x_k-x_0)p_n(x)`<BR>
+<BR>
+<A NAME="41"></A><A NAME="40"></A><A NAME="39"></A>Similarly we get<BR>
+:math:`p(x)=C(\prod\limits_{1\leq j&lt;i\leq n}(x_i-x_j))`, where C is a<BR>
+<A NAME="42"></A>constant. Hence we get that the determinant polynomial will be<BR>
+:math:`(<FONT color="#152dc6"><A HREF="javascript:ZweiFrames('match5-1.html#39',3,'match5-top.html#39',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_n - x_1)(x_n</B></FONT> - x_2).....(<FONT color="#347235"><A HREF="javascript:ZweiFrames('match5-1.html#40',3,'match5-top.html#40',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_n-x_{n-1</B></FONT>})(<FONT color="#f87a17"><A HREF="javascript:ZweiFrames('match5-1.html#41',3,'match5-top.html#41',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>x_{n-1} - x_1).....(x_{n-1</B></FONT>} - x_{n-2})......`<BR>
+Hence one term in the polynomial would be<BR>
+:math:`x_n^nx_{<FONT color="#c57717"><A HREF="javascript:ZweiFrames('match5-1.html#42',3,'match5-top.html#42',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>n-1}^{n-1}..x_1</B></FONT>`. So, the degree of the determinant<BR>
+polynomial will be :math:`n+(n-1)+...+1 = \frac{n(n+1)}{2}`<BR>
+<BR>
+If $x\_i =x\_j $ for some i,j then two rows of the vandermonde matrix<BR>
+will be same from which it follows that det(V) =0<BR>
+<BR>
+Now there is a term in det(V) :math:`x_n^nx_{n-1}^{n-1}..x_1`. Hence<BR>
+comparing it with :math:`p(x)` we get :math:`C = 1` since p(X) also<BR>
+contains the same term and the term is unique.<BR>
+<BR>
+.. code:: ipython3<BR>
+<BR>
+    4. <BR>
+    <BR>
+    <BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+.. parsed-literal::<BR>
+<BR>
+    4.0<BR>
+<BR>
+<BR>
+<BR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,380 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>APOORVA BHATT - ma19m001_assignment2_nmsc.rst</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>APOORVA BHATT - ma19m001_assignment2_nmsc.rst</CENTER></H3><HR>
+<BR>
+MA19M001<BR>
+========<BR>
+<BR>
+Assignment-2<BR>
+------------<BR>
+<BR>
+Solution 1<BR>
+~~~~~~~~~~<BR>
+<BR>
+First, we establish an identity for the Vandermonde determinants:<BR>
+<BR>
+<A NAME="1"></A><A NAME="0"></A>.. math::<BR>
+<A NAME="7"></A><BR>
+<A NAME="8"></A>   \left|\matrix<BR>
+   { <FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#0',2,'match26-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{0} &amp; x_{0}^{2</B></FONT>} &amp; \ldots &amp; x_{0}^{n-1} &amp; <FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#1',2,'match26-top.html#1',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{0}^{n}\\<BR>
+<A NAME="2"></A>   1 &amp; x_{1} &amp; x_{1}^{2</B></FONT>} &amp; \ldots &amp; x_{1}^{n-1} &amp; <FONT color="#c58917"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#7',2,'match26-top.html#7',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{1}^{n} \\<BR>
+<A NAME="10"></A>   1 &amp; x_{2} &amp; x_{2}^{2</B></FONT>} &amp; \ldots &amp; x_{2}^{n-1} &amp; <FONT color="#bce954"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#8',2,'match26-top.html#8',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{2}^{n} \\<BR>
+   1 &amp; x_{3} &amp; x_{3}^{2</B></FONT>} &amp; \ldots &amp; x_{3}^{n-1} &amp; x_{3}^{n}\\<BR>
+   \<FONT color="#77bfc7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#2',2,'match26-top.html#2',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\<BR>
+   1 &amp; x_{n} &amp; x_{n}^{2</B></FONT>} &amp; \ldots &amp; <FONT color="#b041ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#10',2,'match26-top.html#10',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{n}^{n-1}&amp; x</B></FONT>_{n}^{n} \\ }\right| = \prod_{0\leq i&lt;j\leq n}(x_{j}-x_{i})<BR>
+<BR>
+<A NAME="4"></A>The proof is by induction on the size n of the determinant. For n=1 the<BR>
+claim is true by default. Then with the next value n=2:<BR>
+<BR>
+.. math:: \left|\matrix{ <FONT color="#151b8d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#4',2,'match26-top.html#4',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{0} \\ 1 &amp; x_{1</B></FONT>} \\ }\right| = x_{1}-x_{0}<BR>
+<A NAME="27"></A><A NAME="26"></A><A NAME="9"></A><A NAME="6"></A><A NAME="5"></A><BR>
+Now for the inductive step, let us assume<BR>
+<BR>
+.. math:: \left|\matrix{<FONT color="#c8c2a7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#5',2,'match26-top.html#5',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{0} &amp; x_{0}^{2</B></FONT>} &amp; \ldots &amp; x_{0}^{k}\\ <FONT color="#50ebec"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#6',2,'match26-top.html#6',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{1} &amp; x_{1}^{2</B></FONT>} &amp; \ldots &amp; x_{1}^{k} \\ <FONT color="#95b9c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#26',2,'match26-top.html#26',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{2} &amp; x_{2}^{2</B></FONT>} &amp; \ldots &amp; x_{2}^{k} \\ <FONT color="#e77471"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#27',2,'match26-top.html#27',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{3} &amp; x_{3}^{2</B></FONT>} &amp; \ldots &amp; x_{3}^{k} \\ \<FONT color="#f88017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#9',2,'match26-top.html#9',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 1 &amp; x</B></FONT>_{k} &amp; x_{k}^{2} &amp; \ldots &amp; x_{k}^{k} \\ }\right| = \prod_{1\leq i&lt;j\leq k+1}(x_{j}-x_{i})<BR>
+<BR>
+and let n=k+1. Consider,<BR>
+<BR>
+<A NAME="21"></A><A NAME="20"></A>.. math::<BR>
+<A NAME="22"></A><BR>
+<A NAME="23"></A>   \Delta=\left|\matrix<BR>
+   { <FONT color="#d4a017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#20',2,'match26-top.html#20',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{0} &amp; x_{0}^{2</B></FONT>} &amp; \ldots &amp; x_{0}^{k+<FONT color="#00ff00"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#21',2,'match26-top.html#21',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1}\\<BR>
+   1 &amp; x_{1} &amp; x_{1}^{2</B></FONT>} &amp; \ldots &amp; x_{1}^{k+<FONT color="#4cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#22',2,'match26-top.html#22',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1} \\<BR>
+   1 &amp; x_{2} &amp; x_{2}^{2</B></FONT>} &amp; \ldots &amp; x_{2}^{k+<FONT color="#f660ab"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#23',2,'match26-top.html#23',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1} \\<BR>
+   1 &amp; x_{3} &amp; x_{3}^{2</B></FONT>} &amp; \ldots &amp; x_{3}^{k+1} \\<BR>
+   \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ <BR>
+   1 &amp; x_{k+1} &amp; x_{k+1}^{2} &amp; \ldots &amp; x_{k+1}^{k+1} \\ }\right|<BR>
+<BR>
+First we subtract the last row in turn from all others:<BR>
+<A NAME="16"></A><BR>
+<A NAME="17"></A>.. math::<BR>
+<A NAME="18"></A><BR>
+<A NAME="19"></A>   \Delta=\left|\matrix{ 0 &amp; x_{0}-x_{k+<FONT color="#3090c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#16',2,'match26-top.html#16',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1} &amp; x_{0}^{2}-x</B></FONT>_{k+1}^{2} &amp; \ldots &amp; x_{0}^{k}-x_{k+1}^{k} &amp; x_{0}^{k+1}-x_{k+1}^{k+1} \\<BR>
+   0 &amp; x_{1}-x_{k+<FONT color="#800517"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#17',2,'match26-top.html#17',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1} &amp; x_{1}^{2}-x</B></FONT>_{k+1}^{2} &amp; \ldots &amp; x_{1}^{k}-x_{k+1}^{k} &amp; x_{1}^{k+1}-x_{k+1}^{k+1} \\<BR>
+   0 &amp; x_{2}-x_{k+<FONT color="#f62817"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#18',2,'match26-top.html#18',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1} &amp; x_{2}^{2}-x</B></FONT>_{k+1}^{2} &amp; \ldots &amp; x_{2}^{k}-x_{k+1}^{k} &amp; x_{2}^{k+1}-x_{k+1}^{k+1} \\<BR>
+   0 &amp; x_{3}-x_{k+<FONT color="#4e9258"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#19',2,'match26-top.html#19',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1} &amp; x_{3}^{2}-x</B></FONT>_{k+1}^{2} &amp; \ldots &amp; x_{3}^{k}-x_{k+1}^{k} &amp; x_{3}^{k+1}-x_{k+1}^{k+1} \\<BR>
+   \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\<BR>
+   1 &amp; x_{k+1} &amp; x_{k+1}^{2} &amp; \ldots &amp; x_{k+1}^{k} &amp; x_{k+1}^{k+1} \\ }\right|<BR>
+<BR>
+Next, multiply column k+1 by :math:`x_{k+1}` and subtract the result<BR>
+from column k+2; multiply column k by :math:`x_k` and subtract the<BR>
+result from column k+1, and so on:<BR>
+<BR>
+.. math::<BR>
+<BR>
+   \Delta=\left|\matrix<BR>
+   { 0 &amp; x_{0}-x_{k+1} &amp; x_{0}(x_{0}-x_{k+1}) &amp; \ldots &amp; x_{0}^{k-1}(x_{0}-x_{k+1}) &amp; x_{0}^{k}(x_{0}-x_{k+1})\\<BR>
+   0 &amp; x_{1}-x_{k+1} &amp; x_{1}(x_{1}-x_{k+1}) &amp; \ldots &amp; x_{1}^{k-1}(x_{1}-x_{k+1}) &amp; x_{1}^{k}(x_{1}-x_{k+1}) \\<BR>
+   0 &amp; x_{2}-x_{k+1} &amp; x_{2}(x_{2}-x_{k+1}) &amp; \ldots &amp; x_{2}^{k-1}(x_{2}-x_{k+1}) &amp; x_{2}^{k}(x_{2}-x_{k+1}) \\<BR>
+   0 &amp; x_{3}-x_{k+1} &amp; x_{3}(x_{3}-x_{k+1}) &amp; \ldots &amp; x_{3}^{k-1}(x_{3}-x_{k+1}) &amp; x_{3}^{k}(x_{3}-x_{k+1}) \\<BR>
+   \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\<BR>
+   1 &amp; 0 &amp; 0 &amp; \ldots &amp; 0 &amp; 0 \\ }\right|<BR>
+<BR>
+Expanding the determinant by the first column gives<BR>
+<BR>
+.. math::<BR>
+<A NAME="24"></A><BR>
+<A NAME="25"></A>   \Delta=(-1)^{k+3}\prod_{0\leq i\leq k+1}(x_{i}-x_{k+1})<BR>
+<A NAME="14"></A>   \left|\matrix<BR>
+<A NAME="15"></A>   { <FONT color="#ada96e"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#24',2,'match26-top.html#24',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{0} &amp; x_{0}^{2</B></FONT>} &amp; \ldots &amp; x_{1}^{k} \\<BR>
+   <FONT color="#87f717"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#25',2,'match26-top.html#25',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1 &amp; x_{1} &amp; x_{1}^{2</B></FONT>} &amp; \ldots &amp; x_{1}^{k} \\<BR>
+   1 &amp; <FONT color="#f52887"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#14',2,'match26-top.html#14',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{2} &amp; x_{2}^{2</B></FONT>} &amp; \ldots &amp; x_{2}^{k} \\<BR>
+   1 &amp; <FONT color="#3bb9ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#15',2,'match26-top.html#15',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{3} &amp; x_{3}^{2</B></FONT>} &amp; \ldots &amp; x_{3}^{k} \\<BR>
+   \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\<BR>
+   1 &amp; x_{k} &amp; x_{k}^{2} &amp; \ldots &amp; x_{k}^{k} \\ }<BR>
+<A NAME="12"></A>   \right|= <BR>
+<A NAME="13"></A>   \prod_{0\leq i\leq k+1}(x_{k+1}-x_{i})<BR>
+   \left|\matrix<BR>
+   { 1 &amp; <FONT color="#3b9c9c"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#12',2,'match26-top.html#12',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{0} &amp; x_{0}^{2</B></FONT>} &amp; \ldots &amp; x_{0}^{k} \\ <BR>
+   1 &amp; <FONT color="#842dce"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#13',2,'match26-top.html#13',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_{1} &amp; x_{1}^{2</B></FONT>} &amp; \ldots &amp; x_{1}^{k} \\ <BR>
+   1 &amp; x_{2} &amp; x_{2}^{2} &amp; \ldots &amp; x_{2}^{k} \\<BR>
+   1 &amp; x_{3} &amp; x_{3}^{2} &amp; \ldots &amp; x_{3}^{k} \\<BR>
+   \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\<BR>
+   1 &amp; x_{k+1} &amp; x_{k+1}^{2} &amp; \ldots &amp; x_{k+1}^{k} \\ }\right|<BR>
+<BR>
+which together with mathematical induction completes the proof.<BR>
+<BR>
+<A NAME="32"></A>i.e. determinant of Vandermonde matrix of order n+1 is<BR>
+:math:`\prod_{0 \le i &lt; j \le n} (x_j - x_i)`<BR>
+<BR>
+<FONT color="#82cafa"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#32',2,'match26-top.html#32',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>on expanding<BR>
+<BR>
+.. math:: \left(\prod_{i=1}^{n}(x_i-x_0)\right)\left(\prod_{i=1}^{n}(x_i-x_1)\right)\left(\prod_{i=1}^{n}(x_i-x_2)\right) \cdots \left(\prod_{i=1}^{n}(x_i-x_{n-1})\right</B></FONT>) <BR>
+<A NAME="29"></A><BR>
+Now keeping the determinant in mind, we can easily answer that,<BR>
+<BR>
+<A NAME="30"></A>a. Determinant is polynomial of degree :<FONT color="#faafba"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#29',2,'match26-top.html#29',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`\frac{n(n+1)}{2</B></FONT>}` with<BR>
+   variables :math:`x_0,x_1,x_2\dots x_n`.<BR>
+<BR>
+<A NAME="31"></A>b. from the expression we can see that, if :<FONT color="#f9966b"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#30',2,'match26-top.html#30',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`x_i=x_j</B></FONT>` for any<BR>
+   :math:`i\ne j`, detterminant will be 0.<BR>
+<BR>
+c. every :<FONT color="#3ea99f"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#31',2,'match26-top.html#31',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`(x_i-x_j)` is a factor of</B></FONT> the determinant for<BR>
+   :math:`i\ne j`.<BR>
+<A NAME="3"></A><BR>
+d. Determinant of :math:`Vandermonde` matrix of order n+1 is<BR>
+   :math:`\prod_{0 \le i &lt; j \le n} (x_j - x_i)` =<BR>
+   :math:`C\left(\prod_{0 \le j &lt; i \le n} (<FONT color="#6cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#3',2,'match26-top.html#3',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x_i - x_j)\right</B></FONT>)`<BR>
+<BR>
+where value of :math:`C` has two options, 1 or -1.<BR>
+<A NAME="28"></A><BR>
+e. <BR>
+<BR>
+<FONT color="#717d7d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#28',2,'match26-top.html#28',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>consider the highest degree term then we have,<BR>
+<BR>
+.. math:: x_1x_2^2x_3^3x_4^4</B></FONT>\dots x_n^n<BR>
+<BR>
+, which have coefficiant equal to 1, thus it is clearly seen that<BR>
+:math:`C=1`.<BR>
+<BR>
+<A NAME="37"></A>Solution 2<BR>
+~~~~~~~~~~<BR>
+<BR>
+We need <FONT color="#810541"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#37',2,'match26-top.html#37',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>to show that the Legendre polynomials satisfy the recurrence<BR>
+<A NAME="38"></A><BR>
+.. math:: q_{n+1} = xq_n - \left({\dfrac{n^2}{4n^2-1}}\right)q_{n-1</B></FONT>}<BR>
+<BR>
+<A NAME="39"></A>In <FONT color="#348781"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#38',2,'match26-top.html#38',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>L.H.S :math:`q_{n+1}`, On multiplying</B></FONT> by it :math:`q_n` and integrate<BR>
+over -1 to 1, which gives<BR>
+<A NAME="40"></A><BR>
+.. <FONT color="#152dc6"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#39',2,'match26-top.html#39',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:: \int_{-1}^1 q_n(x) q_{n+1}(x)dx = 0</B></FONT><BR>
+<BR>
+<A NAME="41"></A> by orthogonality <FONT color="#347235"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#40',2,'match26-top.html#40',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>property.<BR>
+<A NAME="43"></A><A NAME="42"></A><BR>
+Now consider R.H.S</B></FONT>. i.e.<BR>
+:<FONT color="#f87a17"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#41',2,'match26-top.html#41',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`xq_n - \left({\dfrac{n^2}{4n^2-1}}\right)q_{n-1}`, again<BR>
+multiplying</B></FONT> by it :<FONT color="#c57717"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#42',2,'match26-top.html#42',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`q_n(x)` and</B></FONT> integrate <FONT color="#c22817"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#43',2,'match26-top.html#43',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>over -1 to 1 ,we get<BR>
+<BR>
+.. raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+   &amp;\int_{-1}^1 xq_n^2-\left({\dfrac{n^2}{4n^2-1}}\right)q_{n-1}q_ndx\\<BR>
+   &amp;\int_{-1}^1 xq_n^2dx-\int_{-1}^1\left({\dfrac{n^2}{4n^2-1}}\right)q_{n-1}q_ndx<BR>
+   \end{align}<BR>
+<A NAME="45"></A><BR>
+second term is equal to zero by orthogonality condition</B></FONT>, for first term<BR>
+<BR>
+.. <FONT color="#79d867"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#45',2,'match26-top.html#45',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+   \int_{-1}^1 xq_n^2dx &amp;= \left(x \frac{2}{2n+1}\right)_{-1}^1- \int_{-1}^1 1.\frac{2}{2n+1} dx\\<BR>
+   &amp;=\left(x \frac{2}{2n+1}\right)_{-1}^1-\left(x \frac{2}{2n+1}\right)_{-1}^1\\<BR>
+   &amp;=0<BR>
+<A NAME="44"></A>   \end{align</B></FONT>}<BR>
+<BR>
+<A NAME="47"></A><A NAME="46"></A>First term is equal to zero by<BR>
+using\ :<FONT color="#e57ded"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#44',2,'match26-top.html#44',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`\int_{-1}^1 q_n(x</B></FONT>)^2dx = \frac{2}{2n+1}`.<BR>
+<BR>
+<FONT color="#92c7c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#46',2,'match26-top.html#46',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>thus L.H.S = R.H.S</B></FONT> from which we conclude that <FONT color="#d16587"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#47',2,'match26-top.html#47',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>legendre polynomial<BR>
+satisfies the given recurrence</B></FONT>.<BR>
+<BR>
+2.b.<BR>
+<A NAME="52"></A><BR>
+We are given that :math:`p(x)` is a monic polynomial of degree :math:`n`<BR>
+so that we assume that :math:`p(x)=q_n(x)+r(x)` where :math:`q_n(x)` is<BR>
+legendre polynomial of degree n and :math:`r(<FONT color="#2b60de"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#52',2,'match26-top.html#52',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x)` is a polynomial of<BR>
+degree :math:`n-1</B></FONT>` (which can be written as sum of legendre polynomials<BR>
+of degrees less than :math:`n`.)<BR>
+<BR>
+.. raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+   \int_{-1}^1 p^2(x)dx &amp;= \int_{-1}^1 {(q_n(x)+r(x))}^2 dx\\<BR>
+   &amp;= \int_{-1}^{1} q^2_n(x)+r(x)^2+2q_n(x)r(x) dx\\<BR>
+   \end{align}<BR>
+<BR>
+Now, by orthogonality condition the last term i.e.<BR>
+:math:`\int_{-1}^12q_n(x)r(x) dx =0`.<BR>
+<BR>
+To minimize :math:`p(x)` , $:raw-latex:`\int`\_{-1}^1 r(x)^2 dx $ should<BR>
+equal to zero . therefore<BR>
+<BR>
+.. math::  \int_{-1}^1 p(x)^2 dx= \int_{-1}^{1} q_n(x)^2 dx<BR>
+<BR>
+ thus :math:`p(x)=q_n(x)`.<BR>
+<BR>
+Since, the given expression<BR>
+:math:`\int_{-1}^{1} \left(\prod_{k=0}^{n} (x-x_k)\right)^2`, is a monic<BR>
+polynomial of degree n, from above we can conclude that :math:`x_k` as<BR>
+legendre's nodes minimize the given polynomial.<BR>
+<BR>
+Solution 3<BR>
+~~~~~~~~~~<BR>
+<BR>
+3.a. The Chebyshev polynomials of the first kind are defined as:<BR>
+<BR>
+.. math:: T_n(x) = \cos(n \arccos(x))<BR>
+<A NAME="48"></A><BR>
+ From the L.H.S.<BR>
+<BR>
+.. <FONT color="#c57726"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#48',2,'match26-top.html#48',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+   T_{n+1}(x) &amp;= \cos((n+1) \arccos(x))\\<BR>
+   &amp;=\cos(n\arccos(x)+\arccos(x))\\<BR>
+   &amp;= \cos(n\arccos(x))(\cos(\arccos(x)))-\sin(n\arccos(x))(\sin(\arccos(x)))\\<BR>
+   &amp;= xT_n(x)-\sin(n\arccos(x))\sin(\arccos(x))\\<BR>
+   xT_n(x)-T_{n+1}(x)&amp;=\sin(n\arccos(x))\sin(\arccos(x))<BR>
+   \end{align</B></FONT>}<BR>
+<A NAME="49"></A><BR>
+Now from the R.H.S.<BR>
+<BR>
+.. <FONT color="#8e35ef"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#49',2,'match26-top.html#49',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+   T_{n-1}(x) &amp;= \cos((n-1) \arccos(x))\\<BR>
+   &amp;=\cos(n\arccos(x)-\arccos(x))\\<BR>
+   &amp;= \cos(n\arccos(x))(\cos(\arccos(x)))+\sin(n\arccos(x))(\sin(\arccos(x)))\\<BR>
+   &amp;= xT_n(x)+\sin(n\arccos(x))\sin(\arccos(x))\\<BR>
+   T_{n-1}(x)-xT_n(x)&amp;=\sin(n\arccos(x))\sin(\arccos(x))<BR>
+   \end{align}<BR>
+<A NAME="50"></A><BR>
+From</B></FONT> the above two equations, we can conclude:<BR>
+<BR>
+.. <FONT color="#ff0000"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#50',2,'match26-top.html#50',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+   xT_n(x)-T_{n+1}(x)&amp;=T_{n-1}(x)-xT_n(x)\\<BR>
+<A NAME="56"></A>   T_{n+1} &amp;= 2xT_n - T_{n-1}<BR>
+   \end{align</B></FONT>}<BR>
+<BR>
+3.b. We have <FONT color="#52d017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#56',2,'match26-top.html#56',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>the recurrence relation<BR>
+<A NAME="54"></A><BR>
+.. math:: T_{n+1} = 2xT_n - T_{n-1</B></FONT>}<BR>
+<BR>
+ we prove above statement by induction method- <FONT color="#4e8975"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#54',2,'match26-top.html#54',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>for :math:`n=1`,<BR>
+<BR>
+.. math:: T_{2} = 2xT_1 - T_{0}<BR>
+<A NAME="51"></A><BR>
+.. math:: T_{2} = 2x^2 -1</B></FONT><BR>
+<BR>
+ since :<FONT color="#b38481"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#51',2,'match26-top.html#51',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`T_0 = 1` and :math:`T_1 = x</B></FONT>`.<BR>
+<A NAME="55"></A><BR>
+cleary it is satisfied .<BR>
+<BR>
+Now assume that given statement is true <FONT color="#4863a0"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#55',2,'match26-top.html#55',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>for chebyshev polynomial of<BR>
+degree :math</B></FONT>:`k`, and check for polynomial of degree :math:`k+1` Again<BR>
+consider the recurrence relation<BR>
+<A NAME="57"></A><A NAME="53"></A><BR>
+.. math:: T_{k+1} = 2xT_k - T_{k-1}<BR>
+<A NAME="59"></A><A NAME="58"></A><BR>
+By assumption :math:`T_k(<FONT color="#980517"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#57',2,'match26-top.html#57',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x)` is a polynomial of degree :math</B></FONT>:`k` <FONT color="#f88158"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#53',2,'match26-top.html#53',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>with<BR>
+leading coefficient as :math:`2</B></FONT>^{k-1}` for :math:`k \geq 1` and<BR>
+<A NAME="61"></A><A NAME="60"></A>:math:`T_{k-<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#58',2,'match26-top.html#58',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1}` is a polynomial of degree :math</B></FONT>:`k-<FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#59',2,'match26-top.html#59',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>1` with leading<BR>
+coefficient as :math:`2</B></FONT>^{k-2}` for :math:`k \geq 1`.<BR>
+<BR>
+Hence for :math:`T_k(<FONT color="#77bfc7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#60',2,'match26-top.html#60',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>x)`, the leading term comes</B></FONT> from <FONT color="#6cc417"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#61',2,'match26-top.html#61',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>on multiplying<BR>
+<A NAME="62"></A>:math:`2x` with :math:`2</B></FONT>^{k-1}x^k` which is :math:`2^k x^{k+1}`,<BR>
+completing the proof.<BR>
+<A NAME="63"></A><BR>
+3.c. <FONT color="#151b8d"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#62',2,'match26-top.html#62',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>To find zeros of :math:`T_{n+1}(x</B></FONT>)`,<BR>
+<BR>
+.. <FONT color="#c8c2a7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#63',2,'match26-top.html#63',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+   T_{n+1}(x)= \cos((n+1)\arccos(x))&amp;=0\\<BR>
+   (n+1)\arccos(x)&amp;= (2k+1)\frac{\pi}{2}\\<BR>
+   \arccos(x)&amp;= \frac{2k+1}{2n+2}\pi\\<BR>
+<A NAME="65"></A><A NAME="64"></A>   x_k&amp;=\cos{\left(\dfrac{2k+1}{2n+2}\right)\pi}<BR>
+<A NAME="66"></A>   \end{align</B></FONT>}<BR>
+<BR>
+<A NAME="67"></A>Here, :<FONT color="#50ebec"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#64',2,'match26-top.html#64',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`k\in (0,1,2\cdots, n</B></FONT>)` which is :<FONT color="#c58917"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#65',2,'match26-top.html#65',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`n+1` points i.e</B></FONT>. the<BR>
+polymonial <FONT color="#bce954"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#66',2,'match26-top.html#66',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>cuts :math:`x` axis at :math:`n+1` points</B></FONT>.<BR>
+<BR>
+<A NAME="68"></A>3.d. From above, we can <FONT color="#f88017"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#67',2,'match26-top.html#67',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>conclude that :math:`T_n(x)` alternates between<BR>
+<A NAME="69"></A>:math:`\pm1` exactly :math:`n+1` times</B></FONT>.<BR>
+<A NAME="71"></A><A NAME="70"></A><BR>
+<A NAME="72"></A>3.e. We can see <FONT color="#b041ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#68',2,'match26-top.html#68',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>that :math:`|{\prod_{k=0}^n (x-x_k})|` is monic<BR>
+polynomial</B></FONT> where :<FONT color="#571b7e"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#69',2,'match26-top.html#69',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`x_k` are Chebyshev nodes</B></FONT>. But the Chebyshev<BR>
+polynomial :<FONT color="#3b9c9c"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#70',2,'match26-top.html#70',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`T_{n+1}(x)` is</B></FONT> <FONT color="#842dce"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#71',2,'match26-top.html#71',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>not monic since it has leading<BR>
+<A NAME="73"></A>coefficient</B></FONT> as :<FONT color="#f52887"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#72',2,'match26-top.html#72',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:`2^n`.<BR>
+<BR>
+Thus to make it monic</B></FONT>, we divide the Chebysheve polynomial by<BR>
+:math:`2^n`. <FONT color="#3bb9ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#73',2,'match26-top.html#73',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>We get,<BR>
+<BR>
+.. math::  {\prod_{k=0}^n (x-x_k})=\frac{T_{n+1}(x)}{2^n}<BR>
+<A NAME="74"></A><BR>
+ on taking mod</B></FONT> both sides,<BR>
+<BR>
+.. <FONT color="#3090c7"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#74',2,'match26-top.html#74',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:: |{\prod_{k=0}^n (x-x_k})|=|\frac{T_{n+1}(x)}{2^n</B></FONT>}| <BR>
+<A NAME="75"></A><BR>
+For the maximum,<BR>
+<BR>
+.. <FONT color="#800517"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#75',2,'match26-top.html#75',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>math:: \max_{[-1,1]}|{T_{n+1}(x)}| =\max_{[-1,1]}|\cos((n+1) \arccos(x))|\leq 1<BR>
+<BR>
+therefore,<BR>
+<BR>
+.. math:: |{\prod_{k=0}^n (x-x_k})|\leq \frac{1}{2^n</B></FONT>}<BR>
+<BR>
+3.f. Given :math:`P_{n+1}(x)` is monic polynomial of degree :math:`n+1`<BR>
+having :math:`(y_k)` $ k :raw-latex:`\in `0,1,2,:raw-latex:`\cdots `n$<BR>
+as its roots. Also, :math:`\frac{T_{n+1}(x)}{2^n}` is monic Chebyshev<BR>
+polynomial of degree :math:`n+1` and it has<BR>
+<A NAME="11"></A>:math:`x_k=\cos{\left(\frac{2k+1}{2n+2}\right)\pi}` as its roots.<BR>
+<BR>
+Now both polynomials are monic and so when we take their difference thus<BR>
+the leading term vanishes, making :math:`F(x)` <FONT color="#571b7e"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#11',2,'match26-top.html#11',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>a polynomial of degree<BR>
+:math:`n</B></FONT>`.<BR>
+<BR>
+Now, to show that :math:`F(x)` alternates in sign :math:`n+2` on<BR>
+:math:`[-1,1]`, we find the roots of :math:`F(x)`, which gives us<BR>
+<BR>
+.. math::  P_{n+1}(x) = \frac{T_{n+1}(x)}{2^n}<BR>
+<BR>
+.. math:: \prod_{k=0}^n (x-y_k)=\prod_{k=0}^n (x-x_k) <BR>
+<BR>
+This is only possible when both :math:`x_k` and :math:`y_k` are same.<BR>
+<BR>
+Thus :math:`P_n(x)=\frac{T_{n+1}(x)}{2^n}` and :math:`F(x)` have<BR>
+:math:`n+1` roots but :math:`F(x)` is polynomial of degree :math:`n`.<BR>
+From this, we conclude that :math:`F(x)` is identically zero.<BR>
+<BR>
+<A NAME="33"></A>Which implies that Chebyshev nodes minimizes<BR>
+:math:`\max_{x \in [-1,1]}|\prod_{k=0}^n ({x-x_k})|`.<BR>
+<BR>
+<FONT color="#736aff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#33',2,'match26-top.html#33',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>Solution 5<BR>
+~~~~~~~~~~<BR>
+<BR>
+Given<BR>
+<BR>
+.. raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+    \sum_{j=0}^n x_j^m \ell_j(x) = x^m<BR>
+   \end{align</B></FONT>}<BR>
+<A NAME="34"></A><BR>
+let's assume there is p(x) polynomial such that<BR>
+<BR>
+.. <FONT color="#827d6b"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#34',2,'match26-top.html#34',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+<A NAME="36"></A><A NAME="35"></A>    p(x)=\sum_{j=0}^n x_j^m \ell_j(x) <BR>
+   \end{align</B></FONT>}<BR>
+<BR>
+As <FONT color="#41a317"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#35',2,'match26-top.html#35',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>we know that , given any :math:`f(x)` , we can interpolate</B></FONT> <FONT color="#ff00ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match26-0.html#36',2,'match26-top.html#36',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>with the<BR>
+help of lagrange polynomial. i.e.<BR>
+<BR>
+.. raw:: latex<BR>
+<BR>
+   \begin{align}<BR>
+    f(x) \approx p(x)=  \sum_{j=0}^n f_j \ell_j(x) <BR>
+   \end{align</B></FONT>}<BR>
+<BR>
+<BR>
+
+</BODY>
+</HTML>
